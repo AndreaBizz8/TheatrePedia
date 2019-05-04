@@ -1,0 +1,2065 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	
+		<!--STYLESHEET-->
+		<link rel="stylesheet" href="prova.css" type="text/css">
+		<!--FONTS --- font-family: 'Roboto Slab', serif; --- font-family: 'Karla', sans-serif; --- 	font-family: 'Montserrat', sans-serif; -->
+		<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Montserrat:400,500,600,700,700i,900|Roboto+Slab:300,400,700" rel="stylesheet">
+		<!--FONTAWESOME STYLESHEET FOR ICONS-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<!--STYLESHEET FOR BOOTSTRAP-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
+		<!-- fancybox -->
+		<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.css" integrity="sha256-yeunUAqRTmLSd+/km787C2J38++Xl110wMQ1GT81ubQ=" crossorigin="anonymous" />
+			<!--SLICKNAV FR SLIDER-->
+		<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+			<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
+
+	
+		<!-- JAAVASCRIPT -->
+	<!--JAVASCRIPT FOR THE BUTTONS FEEDS SOCIAL-->
+		<script>
+		var socials = ["social1", "social2","social3","social4"]
+		function selectSocial(s, event){
+			for (var social in socials) {
+				if (social != s) {
+					document.getElementById(socials[social]).style.display = "none";
+					document.getElementById("btn"+socials[social]).style.background = "rgba(40, 2, 22, 1.00)";
+					document.getElementById("btn"+socials[social]).style.color = "white";
+				}
+			}
+			document.getElementById(s).style.display = "block";
+			document.getElementById("btn"+s).style.background = "rgba(143, 27, 50, 1.00)";	
+		}
+		</script>
+	<!--JAVASCRIPT FOR THE BUTTONS REVIEWS-->
+		<script>
+		var revws = ["revw1", "revw2"]
+		function selectReview(s, event){
+			for (var revw in revws) {
+				if (revw != s) {
+					document.getElementById(revws[revw]).style.display = "none";
+					document.getElementById("btn"+revws[revw]).style.background = "rgba(40, 2, 22, 1.00)";
+					document.getElementById("btn"+revws[revw]).style.color = "white";
+				}
+			}
+			document.getElementById(s).style.display = "block";
+			document.getElementById("btn"+s).style.background = "rgba(143, 27, 50, 1.00)";	
+		}
+		</script>
+	<!--JAVASCRIPT FOR BUTTONS FOR CAST-->
+		<script>
+		var sects = ["sect1", "sect2","sect3"]
+		function selectSection(s, event){
+			for (var sect in sects) {
+				if (sect != s) {
+					document.getElementById(sects[sect]).style.display = "none";
+					document.getElementById("btn"+sects[sect]).style.background = "rgba(40, 2, 22, 1.00)";
+					document.getElementById("btn"+sects[sect]).style.color = "white";
+				}
+			}
+			document.getElementById(s).style.display = "block";
+			document.getElementById("btn"+s).style.background = "rgba(143, 27, 50, 1.00)";	
+		}
+		</script>
+	<!--JAVASCRIPT FOR THE THEATRE SELECTION-->
+		<script>
+		var theatres = ["theatre1", "theatre2","theatre3","theatre4"]
+		function selectTheatre(s, event){
+			for (var theatre in theatres) {
+				if (theatre != s) {
+					document.getElementById(theatres[theatre]).style.display = "none";
+					document.getElementById("btn"+theatres[theatre]).style.color = "black";
+					document.getElementById("btn"+s).style.background = "rgba(250,250,250,1.00)";	
+				}
+			}
+			document.getElementById(s).style.display = "block";	
+			document.getElementById("btn"+s).style.background = "rgba(143, 27, 50, 1.00)";	
+		}
+		</script>
+	
+<title>Production</title>
+</head>
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-nav navbar-expand-md fixed-top mb-4 px-3" style="line-height: 100px">
+			<a class="navbar-brand" href="prova.html">
+				<img src="img/logo.png" alt="logo" width="300">
+			</a>
+			<div id="navbarCollapse" class="collapse navbar-collapse container-fluid float-right">
+				<ul class="navbar navbar-nav mr-auto align-items-end container align-items-center">
+					<li class="nav-item mx-2"><a class="nav-link font-size-180" data-toggle="collapse" href="#navbar-header-search" role="button" aria-expanded="false" aria-controls="navbar-header-search"><i class="fas fa-search"></i></a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="#">News</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="theatre.html">Theatre</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="production.html">Production</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="calendar.html">Calendar</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="#"><i class="fas fa-sign-in-alt font-size-150"></i> Login</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="collapse" id="navbar-header-search">
+			<form class="p-2 px-5" style="margin-top:100px">
+				<div class="row" >
+					<i class="fas fa-search font-size-180 mx-3"></i>
+					<input class="p-2 container" type="text" placeholder="Search">
+				</div>
+			</form>
+		</div>
+	</header>
+	<main class="mt-5 pt-5" role="main">
+		<div class="container-fluid show-presentation" >
+			<div class="container p-4" style="background-image:url(img/school-of-rock-800wx340h.jpg);background-repeat:no-repeat;background-position: right; background-size:auto 100%;">
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item">London</li>
+					<li class="breadcrumb-item">School Of Rock</li>
+				</ul>
+				<h1 class="title-musical-production roboto-slab">School of Rock The Musical</h1>
+				<p class="font-size-120 mb-0 pt-0 karla sub-title-musical-production">West End</p>
+				<div class="container">					
+					<div class="row mt-3">
+						<div class="row justify-content-center stat-gen-show">
+							<button class="btn btn-book-tickets p-2">Track the show</button>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="row justify-content-center stat-gen-show">
+							<button class="btn btn-book-tickets p-2">Book Tickets</button>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="row justify-content-center stat-gen-show">
+							<button class="btn btn-book-tickets p-2">Add to favourite <i class="fas fa-heart font-size-150"></i></button>
+						</div>
+						
+					</div>	
+				</div>
+			</div>
+		</div>			
+		<div class="container-fluid " style="background-color:RGBA(40, 2, 22, 1.00);">
+			<div class="row py-3 px-5">
+				<div class="col-auto mx-4 align-self-center stat-gen-show">
+					<div class="row justify-content-center stat-gen-show">
+						<i class="fa fa-star font-size-200"></i>
+					</div>
+					<div class="row justify-content-center stat-gen-show">
+						<p class="font-size-130 mb-0">4.5/5</p>
+					</div>
+				</div>
+				<div class="col-auto mx-4 align-self-center stat-gen-show">
+					<div class="row justify-content-center stat-gen-show">
+						<i class="far fa-clock font-size-200"></i>
+					</div>
+					<div class="row justify-content-center stat-gen-show">
+						<p class="font-size-130 mb-0">2h 30min</p>
+					</div>
+				</div>
+				<div class="col-auto mx-4 align-self-center">
+					<div class="row justify-content-center stat-gen-show">
+						<i class="fas fa-heart font-size-200"></i>
+					</div>
+					<div class="row justify-content-center stat-gen-show">
+						<p class="font-size-130 mb-0">2.1k</p>
+					</div>
+				</div>
+				<div class="col align-self-center stat-gen-show">
+					<div class="row justify-content-center">
+						<p class="font-size-130 m-0 p-0">Total shows</p>
+					</div>
+					<div class="row justify-content-center ">
+						<p class="font-size-130 mb-0">1.089</p>
+					</div>
+				</div>
+				<div class="col align-self-center stat-gen-show">
+					<div class="row justify-content-center">
+						<p class="font-size-130 m-0 p-0">Opening Night</p>
+					</div>
+					<div class="row justify-content-center ">
+						<p class="font-size-130 mb-0">24-OCT-17</p>
+					</div>
+				</div>
+				<div class="col align-self-center stat-gen-show">
+					<div class="row justify-content-center">
+						<p class="font-size-130 m-0 p-0">Press Night</p>
+					</div>
+					<div class="row justify-content-center ">
+						<p class="font-size-130 mb-0">29-OCT-17</p>
+					</div>
+				</div>
+				<div class="col align-self-center stat-gen-show">
+					<div class="row justify-content-center">
+						<p class="font-size-130 m-0 p-0">Closing Night</p>
+					</div>
+					<div class="row justify-content-center ">
+						<p class="font-size-130 mb-0">Ongoing</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!--SECTION FOR THEATRE INFORMATIONS, FOR EACH TEATRE YOU WILL HAVE WITH A JAVASCRIPT THE APPEREANCE OF THE SPECIFIC INFORMATION-->
+		<div class="row mt-3">
+			<div class="container p-4">
+				<div class="row">
+					<p class="h2 paragraphTitle">Theatre</p>
+				</div>
+				<div class="container">
+					<div class="row">
+						<!--
+						<ul class="container-fluid mb-0">
+							<li onClick="selectTheatre('theatre1')" id="btntheatre1" class=" m-0 py-1">
+								<div class="text-center">
+									Theatre 1
+								</div>
+							</li>
+							<li onClick="selectTheatre('theatre2')" id="btntheatre2" class="m-0 py-1">
+								<div class="text-center">
+									theatre2
+								</div>
+							</li>
+							<li onClick="selectTheatre('theatre3')" id="btntheatre3" class="m-0 py-1">
+								<div class="text-center">
+									theatre3
+								</div>
+							</li>
+							<li onClick="selectTheatre('theatre4')" id="btntheatre4" class="m-0 py-1">
+								<div class="text-center">
+									theatre4
+								</div>
+							</li>
+						</ul>
+						-->
+						<div class="container-fluid" id="theatre" style="display:block;">
+							<div class="container">
+								<div class="row my-4">
+									<p class="h2 paragraphTitle">Location Information</p>
+								</div>
+								<div class="row">
+									<!--FIRST COLUMN-->
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												<div id="map1" style="width:300px;height:300px;background-color:yellow"></div>
+												<!--script for the map-->
+												<script>
+													function myMap() {
+													var mapOptions = {
+														center: new google.maps.LatLng(51.5, -0.12),
+														zoom: 13,
+														mapTypeId: google.maps.MapTypeId.HYBRID
+													}
+													var map = new google.maps.Map(document.getElementById("map1"), mapOptions);
+													}
+												</script>
+												<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUxZuJCYS6NJ1v52h6wDaiLWG5Q8HMrPA&callback=myMap"></script>
+											</div>
+											<div class="col">
+												<div class="row mb-2 align-items-center"><img src="img/United-Kingdom-flag-icon.png" alt="flag" height="50" width="85"></div>
+												<hr class="container mt-2 mb-2" style="width:80%">
+												<div class="row mb-2">166 Drury Ln</div>
+												<div class="row mb-2">WC2B 5PW</div>
+												<div class="row mb-2">London</div>
+												<div class="row mb-2">51.515556°N 0.123056°W</div>
+											</div>
+										</div>
+									</div>
+									<!--SECOND COLUMN-->
+									<div class="col left-line">
+										<div class="row">
+											<div class="col-3">Website</div>
+											<div class="col">www.reallyusefultheatres.co.uk/our-theatres/gillian-lynne</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Owner</div>
+											<div class="col"> Really Useful Theatres</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Capacity</div>
+											<div class="col">1.118 on 2 levels</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Opened</div>
+											<div class="col">2nd January 1973</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Achitect</div>
+											<div class="col">Frank Matcham</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Original Name</div>
+											<div class="col">New London Theatre</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+									</div>
+								</div>
+							  <!--ROW FOR THE ADDITIONL INFORMATION AS FACILITY AVAILABLE-->
+								<div class="row mt-4">
+									<div class="col">
+										<div class="container">
+											<div class="row container h2 paragraphTitle">Contact Information</div>
+											<div class="row">
+												<div class="container ml-5">
+													<div class="flex container-fluid">
+														<div class="row align-items-center mt-2">
+															<div class="col-auto text-right font-size-150"><i class="fas fa-envelope"></i></div>
+															<div class="col small">theatreemail@email.com</div>
+														</div>
+														<div class="row align-items-center mt-2">
+															<div class="col-auto text-right font-size-150"><i class="fas fa-phone"></i></div>
+															<div class="col small text-left">02072447653</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="container">
+											<div class="row container h2 paragraphTitle">Additional Services</div>
+											<div class="row">
+												<div class="container ml-5">
+													<div class="flex container-fluid font-size-180">
+														<i class="mx-3 fas fa-wifi"></i>
+														<i class="mx-3 fas fa-wheelchair"></i>
+														<i class="mx-3 fas fa-assistive-listening-systems"></i>
+														<i class="mx-3 fas fa-parking"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--SECTION FOR SCHEDULED PERFORMANCES AND DISCCOUNTED TICKETS-->
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col-4 mx-4 px-4	">
+						<div class="row">
+							<h4 class="container-fluid paragraphTitle">Performances</h4>
+						</div>
+						<div class="row">
+							<p class="small">The information provided might differ from the actual timing and information due to extra shows during bank holiday.</p>
+						</div>
+						<div class="row">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col text-center">Day</th>
+										<th scope="col text-center">Matinee</th>
+										<th scope="col text-center">Evening</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="col-2">Monday</th>
+										<td class="col-2 text-center">OFF</td>
+										<td class="col-2 text-center">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Tuesday</th>
+										<td class="col-2 text-center">OFF</td>
+										<td class="col-2 text-center">OFF</td>
+									</tr>
+									<tr>
+										<th class="col-2">Wednesday</th>
+										<td class="col-2 text-center">OFF</td>
+										<td class="col-2 text-center">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Thursday</th>
+										<td class="col-2 text-center">14:30</td>
+										<td class="col-2 text-center">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Friday</th>
+										<td class="col-2 text-center">OFF</td>
+										<td class="col-2 text-center">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Saturday</th>
+										<td class="col-2 text-center">14:30</td>
+										<td class="col-2 text-center">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Sunday</th>
+										<td class="col-2 text-center">15:00</td>
+										<td class="col-2 text-center">OFF</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col mx-4 px-4">
+						<div class="row">
+							<h4 class="container-fluid paragraphTitle ">Discounted Ticket Information</h4>
+						</div>
+						<div class="row">
+							<p class="small">The information provided might differ from the actual information due to the possibility of changing the policy of the theatre/production.</p>
+						</div>
+						<div class="row">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Dayseat/Rush</h5></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="col">Dayseat are available at the box office from usually 10.00 AM (depending on box office opening hours). Seats are allocated randomly, usually in the stalls. The cost of each ticket is £20.</td>
+									</tr>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Lottery</h5></th>
+									</tr>
+									<tr>
+										<td class="col">The production offer lottery ticket at £15 each (for a maximum of 2) by entering the link in their own website.</td>
+									</tr>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Student</h5></th>
+									</tr>
+									<tr>
+										<td class="col">Student tickets are available at £10 on Wednesday evening performance with presentation of Student ID from 18:00 on the day.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>	
+						</div>
+						<div class="container-fluid" id="theatre2" style="display:none;">
+							<div class="container p-4">
+								<div class="row my-4">
+									<p class="h2 paragraphTitle">Location Information2</p>
+								</div>
+								<div class="row">
+									<!--FIRST COLUMN-->
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												<div id="map2" style="width:300px;height:300px;background-color:yellow"></div>
+												<!--script for the map-->
+												<script>
+													function myMap() {
+													var mapOptions = {
+														center: new google.maps.LatLng(51.5, -0.12),
+														zoom: 13,
+														mapTypeId: google.maps.MapTypeId.HYBRID
+													}
+													var map = new google.maps.Map(document.getElementById("map2"), mapOptions);
+													}
+												</script>
+												<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUxZuJCYS6NJ1v52h6wDaiLWG5Q8HMrPA&callback=myMap"></script>
+											</div>
+											<div class="col">
+												<div class="row mb-2 align-items-center"><img src="img/flag.jpg" alt="flag" height="50" width="85"></div>
+												<hr class="container mt-2 mb-2" style="width:80%">
+												<div class="row mb-2">166 Drury Ln</div>
+												<div class="row mb-2">WC2B 5PW</div>
+												<div class="row mb-2">London</div>
+												<div class="row mb-2">51.515556°N 0.123056°W</div>
+											</div>
+										</div>
+									</div>
+									<!--SECOND COLUMN-->
+									<div class="col left-line">
+										<div class="row">
+											<div class="col-3">Website</div>
+											<div class="col">www.reallyusefultheatres.co.uk/our-theatres/gillian-lynne</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Owner</div>
+											<div class="col"> Really Useful Theatres</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Capacity</div>
+											<div class="col">1.118 on 2 levels</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Production</div>
+											<div class="col">Detail 4</div>
+										</div>
+										<div class="row">
+											<div class="col-3">Opened</div>
+											<div class="col">2nd January 1973</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Achitect</div>
+											<div class="col">Frank Matcham</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Original Name</div>
+											<div class="col">New London Theatre</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+									</div>
+								</div>
+							  <!--ROW FOR THE ADDITIONL INFORMATION AS FACILITY AVAILABLE-->
+								<div class="row mt-4">
+									<div class="col">
+										<div class="container">
+											<div class="row container h2 paragraphTitle">Contact Information</div>
+											<div class="row">
+												<div class="container ml-5">
+													<div class="flex container-fluid">
+														<div class="row align-items-center mt-2">
+															<div class="col-auto text-right font-size-150"><i class="fas fa-envelope"></i></div>
+															<div class="col small">theatreemail@email.com</div>
+														</div>
+														<div class="row align-items-center mt-2">
+															<div class="col-auto text-right font-size-150"><i class="fas fa-phone"></i></div>
+															<div class="col small text-left">02072447653</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="container">
+											<div class="row container h2 paragraphTitle">Additional Services</div>
+											<div class="row">
+
+												<div class="container ml-5">
+													<div class="flex container-fluid font-size-180">
+														<i class="mx-3 fas fa-wifi"></i>
+														<i class="mx-3 fas fa-wheelchair"></i>
+														<i class="mx-3 fas fa-assistive-listening-systems"></i>
+														<i class="mx-3 fas fa-parking"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--SECTION FOR SCHEDULED PERFORMANCES AND DISCCOUNTED TICKETS-->
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col-4 mx-4 px-4	">
+						<div class="row">
+							<h4 class="container-fluid paragraphTitle">Performances</h4>
+						</div>
+						<div class="row">
+							<p class="small">The information provided might differ from the actual timing and information due to extra shows during bank holiday.</p>
+						</div>
+						<div class="row">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">Day</th>
+										<th scope="col">Matinee</th>
+										<th scope="col">Evening</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="col-2">Monday</th>
+										<td class="col-2">OFF</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Tuesday</th>
+										<td class="col-2">OFF</td>
+										<td class="col-2">OFF</td>
+									</tr>
+									<tr>
+										<th class="col-2">Wednesday</th>
+										<td class="col-2">OFF</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Thursday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Friday</th>
+										<td class="col-2">14:30OFF</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Saturday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Sunday</th>
+										<td class="col-2">15:00</td>
+										<td class="col-2">OFF</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col mx-4 px-4">
+						<div class="row">
+							<h4 class="container-fluid paragraphTitle ">Discounted Ticket Information</h4>
+						</div>
+						<div class="row">
+							<p class="small">The information provided might differ from the actual information due to the possibility of changing the policy of the theatre/production.</p>
+						</div>
+						<div class="row">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Dayseat/Rush</h5></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="col">Dayseat are available at the box office from usually 10.00 AM (depending on box office opening hours). Seats are allocated in front row of te stalls.</td>
+									</tr>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Lottery</h5></th>
+									</tr>
+									<tr>
+										<td class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa natus nisi voluptas explicabo, delectus quia alias amet quis quas fugit laudantium aliquid, corporis nemo incidunt. Suscipit?</td>
+									</tr>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Student</h5></th>
+									</tr>
+									<tr>
+										<td class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa natus nisi voluptas explicabo, delectus quia alias amet quis quas fugit laudantium aliquid, corporis nemo incidunt. Suscipit?</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>	
+						</div>
+						<div class="container-fluid" id="theatre3" style="display:none;">
+								<div class="container p-4">
+								<div class="row my-4">
+									<p class="h2 paragraphTitle">Location Information3</p>
+								</div>
+								<div class="row">
+									<!--FIRST COLUMN-->
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												<div id="map3" style="width:300px;height:300px;background-color:yellow"></div>
+												<!--script for the map-->
+												<script>
+													function myMap() {
+													var mapOptions = {
+														center: new google.maps.LatLng(51.5, -0.12),
+														zoom: 13,
+														mapTypeId: google.maps.MapTypeId.HYBRID
+													}
+													var map = new google.maps.Map(document.getElementById("map3"), mapOptions);
+													}
+												</script>
+												<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUxZuJCYS6NJ1v52h6wDaiLWG5Q8HMrPA&callback=myMap"></script>
+											</div>
+											<div class="col">
+												<div class="row mb-2 align-items-center"><img src="img/flag.jpg" alt="flag" height="50" width="85"></div>
+												<hr class="container mt-2 mb-2" style="width:80%">
+												<div class="row mb-2">166 Drury Ln</div>
+												<div class="row mb-2">WC2B 5PW</div>
+												<div class="row mb-2">London</div>
+												<div class="row mb-2">51.515556°N 0.123056°W</div>
+											</div>
+										</div>
+									</div>
+									<!--SECOND COLUMN-->
+									<div class="col left-line">
+										<div class="row">
+											<div class="col-3">Website</div>
+											<div class="col">www.reallyusefultheatres.co.uk/our-theatres/gillian-lynne</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Owner</div>
+											<div class="col"> Really Useful Theatres</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Capacity</div>
+											<div class="col">1.118 on 2 levels</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Production</div>
+											<div class="col">Detail 4</div>
+										</div>
+										<div class="row">
+											<div class="col-3">Opened</div>
+											<div class="col">2nd January 1973</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Achitect</div>
+											<div class="col">Frank Matcham</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Original Name</div>
+											<div class="col">New London Theatre</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+									</div>
+								</div>
+							  <!--ROW FOR THE ADDITIONL INFORMATION AS FACILITY AVAILABLE-->
+								<div class="row mt-4">
+									<div class="col">
+										<div class="container">
+											<div class="row container h2 paragraphTitle">Contact Information</div>
+											<div class="row">
+												<div class="container ml-5">
+													<div class="flex container-fluid">
+														<div class="row align-items-center mt-2">
+															<div class="col-auto text-right font-size-150"><i class="fas fa-envelope"></i></div>
+															<div class="col small">theatreemail@email.com</div>
+														</div>
+														<div class="row align-items-center mt-2">
+															<div class="col-auto text-right font-size-150"><i class="fas fa-phone"></i></div>
+															<div class="col small text-left">02072447653</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="container">
+											<div class="row container h2 paragraphTitle">Additional Services</div>
+											<div class="row">
+
+												<div class="container ml-5">
+													<div class="flex container-fluid font-size-180">
+														<i class="mx-3 fas fa-wifi"></i>
+														<i class="mx-3 fas fa-wheelchair"></i>
+														<i class="mx-3 fas fa-assistive-listening-systems"></i>
+														<i class="mx-3 fas fa-parking"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					<!--SECTION FOR SCHEDULED PERFORMANCES AND DISCCOUNTED TICKETS-->
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col-4 mx-4 px-4	">
+						<div class="row">
+							<h4 class="container-fluid paragraphTitle">Performances</h4>
+						</div>
+						<div class="row">
+							<p class="small">The information provided might differ from the actual timing and information due to extra shows during bank holiday.</p>
+						</div>
+						<div class="row">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">Day</th>
+										<th scope="col">Matinee</th>
+										<th scope="col">Evening</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="col-2">Monday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Tuesday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Wednesday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Thursday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Friday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Saturday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Sunday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col mx-4 px-4">
+						<div class="row">
+							<h4 class="container-fluid paragraphTitle ">Discounted Ticket Information</h4>
+						</div>
+						<div class="row">
+							<p class="small">The information provided might differ from the actual information due to the possibility of changing the policy of the theatre/production.</p>
+						</div>
+						<div class="row">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Dayseat/Rush</h5></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="col">Dayseat are available at the box office from usually 10.00 AM (depending on box office opening hours). Seats are allocated in front row of te stalls.</td>
+									</tr>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Lottery</h5></th>
+									</tr>
+									<tr>
+										<td class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa natus nisi voluptas explicabo, delectus quia alias amet quis quas fugit laudantium aliquid, corporis nemo incidunt. Suscipit?</td>
+									</tr>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Student</h5></th>
+									</tr>
+									<tr>
+										<td class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa natus nisi voluptas explicabo, delectus quia alias amet quis quas fugit laudantium aliquid, corporis nemo incidunt. Suscipit?</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>	
+						</div>
+						<div class="container-fluid" id="theatre4" style="display:none;">
+							<div class="container p-4">
+								<div class="row my-4">
+									<p class="h2 paragraphTitle">Location Information 4</p>
+								</div>
+								<div class="row">
+									<!--FIRST COLUMN-->
+									<div class="col">
+										<div class="row">
+											<div class="col">
+												<div id="map4" style="width:300px;height:300px;background-color:yellow"></div>
+												<!--script for the map-->
+												<script>
+													function myMap() {
+													var mapOptions = {
+														center: new google.maps.LatLng(51.5, -0.12),
+														zoom: 13,
+														mapTypeId: google.maps.MapTypeId.HYBRID
+													}
+													var map = new google.maps.Map(document.getElementById("map4"), mapOptions);
+													}
+												</script>
+												<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUxZuJCYS6NJ1v52h6wDaiLWG5Q8HMrPA&callback=myMap"></script>
+											</div>
+											<div class="col">
+												<div class="row mb-2 align-items-center"><img src="img/flag.jpg" alt="flag" height="50" width="85"></div>
+												<hr class="container mt-2 mb-2" style="width:80%">
+												<div class="row mb-2">166 Drury Ln</div>
+												<div class="row mb-2">WC2B 5PW</div>
+												<div class="row mb-2">London</div>
+												<div class="row mb-2">51.515556°N 0.123056°W</div>
+											</div>
+										</div>
+									</div>
+									<!--SECOND COLUMN-->
+									<div class="col left-line">
+										<div class="row">
+											<div class="col-3">Website</div>
+											<div class="col">www.reallyusefultheatres.co.uk/our-theatres/gillian-lynne</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Owner</div>
+											<div class="col"> Really Useful Theatres</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Capacity</div>
+											<div class="col">1.118 on 2 levels</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Production</div>
+											<div class="col">Detail 4</div>
+										</div>
+										<div class="row">
+											<div class="col-3">Opened</div>
+											<div class="col">2nd January 1973</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Achitect</div>
+											<div class="col">Frank Matcham</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+										<div class="row">
+											<div class="col-3">Original Name</div>
+											<div class="col">New London Theatre</div>
+										</div>
+										<hr class="container mt-2 mb-2" style="width:80%">
+									</div>
+								</div>
+							  <!--ROW FOR THE ADDITIONL INFORMATION AS FACILITY AVAILABLE-->
+								<div class="row mt-4">
+									<div class="col">
+										<div class="container">
+											<div class="row container h2 paragraphTitle">Contact Information</div>
+											<div class="row">
+												<div class="container ml-5">
+													<div class="flex container-fluid">
+														<div class="row align-items-center mt-2">
+															<div class="col-auto text-right font-size-150"><i class="fas fa-envelope"></i></div>
+															<div class="col small">theatreemail@email.com</div>
+														</div>
+														<div class="row align-items-center mt-2">
+															<div class="col-auto text-right font-size-150"><i class="fas fa-phone"></i></div>
+															<div class="col small text-left">02072447653</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="container">
+											<div class="row container h2 paragraphTitle">Additional Services</div>
+											<div class="row">
+
+												<div class="container ml-5">
+													<div class="flex container-fluid font-size-180">
+														<i class="mx-3 fas fa-wifi"></i>
+														<i class="mx-3 fas fa-wheelchair"></i>
+														<i class="mx-3 fas fa-assistive-listening-systems"></i>
+														<i class="mx-3 fas fa-parking"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+<!--SECTION FOR SCHEDULED PERFORMANCES AND DISCCOUNTED TICKETS-->
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col-4 mx-4 px-4	">
+						<div class="row">
+							<h4 class="container-fluid paragraphTitle">Performances</h4>
+						</div>
+						<div class="row">
+							<p class="small">The information provided might differ from the actual timing and information due to extra shows during bank holiday.</p>
+						</div>
+						<div class="row">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">Day</th>
+										<th scope="col">Matinee</th>
+										<th scope="col">Evening</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="col-2">Monday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Tuesday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Wednesday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Thursday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Friday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Saturday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+									<tr>
+										<th class="col-2">Sunday</th>
+										<td class="col-2">14:30</td>
+										<td class="col-2">19:30</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col mx-4 px-4">
+						<div class="row">
+							<h4 class="container-fluid paragraphTitle ">Discounted Ticket Information</h4>
+						</div>
+						<div class="row">
+							<p class="small">The information provided might differ from the actual information due to the possibility of changing the policy of the theatre/production.</p>
+						</div>
+						<div class="row">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Dayseat/Rush</h5></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="col">Dayseat are available at the box office from usually 10.00 AM (depending on box office opening hours). Seats are allocated in front row of te stalls.</td>
+									</tr>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Lottery</h5></th>
+									</tr>
+									<tr>
+										<td class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa natus nisi voluptas explicabo, delectus quia alias amet quis quas fugit laudantium aliquid, corporis nemo incidunt. Suscipit?</td>
+									</tr>
+									<tr>
+										<th class="col pb-1 pt-3"><h5 class="text-center paragraphTitle mb-0 pb-0">Student</h5></th>
+									</tr>
+									<tr>
+										<td class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa natus nisi voluptas explicabo, delectus quia alias amet quis quas fugit laudantium aliquid, corporis nemo incidunt. Suscipit?</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>	
+						</div>
+						</div>
+				</div>
+			</div>
+		</div>	
+			
+		<!--STATISTIC AND FUN FACTS SECTION-->
+		<div class="container-fluid p-0 " style="background-color:RGBA(40, 2, 22, 1.00);">
+				<div class="row justify-content-center p-0 m-0">
+					<p class="banner-title p-2 m-0">Statistics and Fun Facts</p>
+				</div>
+				<div class="container-fluid show-presentation">
+					<div class="row py-3 px-5">
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Total Review Received</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">2.535</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Total Number of Production</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">7</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Theatres produced</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">35</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Total Actors Involved</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">435</p>
+							</div>
+						</div>
+
+					</div>
+					<hr class="stat-gen-show" style="color:white">
+					<div class="row py-3 px-5">
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Total Number of roles</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">25</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Total songs in the musical</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">21</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Overall Production Rating</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">85th</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Overall Show Rating</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">65th</p>
+							</div>
+						</div>
+
+					</div>
+					<hr class="stat-gen-show" style="color:white">
+					<div class="row py-3 px-5">
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">First Production Opened</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">06-DEC-15</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Cast Change Had</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">19</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Show Award Nomination</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">15</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Show Award Won</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--PAST AND PRESENT AND FUTURE PRODUCTIONS-->
+		<div class="container-fluid my-4">
+			<div class="row">
+				<div class="h2 paragraphTitle container-fluid">Past And Present Productions</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row justify-content-center mt-3">
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/US-United-States-Flag.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">Broadway</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">15-dec-2015</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">20-jan-2019</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="col-3 card m-2" href="production.html">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/United-Kingdom-flag-icon.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title" style="color:black">West End</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-JUN-1995</p></div>
+									<div class="col-auto p-0 showpage-production-date">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-MAR-2005</p></div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/US-United-States-Flag.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">National US Tour</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-jun-1995</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-MAR-2005</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/Australia-Flag-icon.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">Melbourne</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-jun-1995</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-MAR-2005</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/China-Flag-icon.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">China</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-jun-1995</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-MAR-2005</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/South-Korea-icon.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">South Korea</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-jun-1995</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-MAR-2005</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/Italy-Flag-icon.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">Italy</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-jun-1995</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-MAR-2005</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--SECTION FOR THUMBNAIL WITH GALLERY-->
+		<div class="container-fluid m-0 py-4" style="background-color:RGBA(102, 2, 22, 1.00);">
+			<section class="container center slider my-0">
+				<div>
+					<a href="img/production/1.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+						<img src="img/production/1.jpg" width="250" height="180">
+					</a>
+				</div>
+				<div>
+					<a href="img/production/4.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+						<img src="img/production/4.jpg" width="250" height="180">
+					</a>
+				</div>
+				<div>
+					<a href="img/production/5.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+						<img src="img/production/5.jpg" width="250" height="180">
+					</a>
+				</div>
+				<div>
+					<a href="img/production/6.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+						<img src="img/production/6.jpg" width="250" height="180">
+					</a>
+				</div>
+				<div>
+					<a href="img/production/7.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+						<img src="img/production/7.jpg" width="250" height="180">
+					</a>
+				</div>
+				<div>
+					<a href="img/production/8.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+						<img src="img/production/8.jpg" width="250" height="180">
+					</a>
+				</div>
+			</section>
+		</div>
+		
+		<div class="container">
+			<div class="row mt-5">
+				<!--FEED-->
+				<div class="col-5" style="width:100%;">
+					<div class="container">
+						<div class="">
+							<div class="container-fluid p-0 inline-list-user-profile">
+								<ul class="list-inline container-fluid d-flex justify-content-around align-items-end mb-0">
+									<li onClick="selectSocial('social1')" id="btnsocial1" class="list-inline-item paragraphTitle m-0 py-1 title-selection"><div class="text-center"><i class="fab fa-facebook-square font-size-200"></i></div></li>
+									<li onClick="selectSocial('social2')" id="btnsocial2" class="list-inline-item paragraphTitle m-0 py-1 title-selection"><div class="text-center"><i class="fab fa-instagram font-size-200"></i></div></li>
+									<li onClick="selectSocial('social3')" id="btnsocial3" class="list-inline-item paragraphTitle m-0 py-1 title-selection"><div class="text-center"><i class="fab fa-twitter-square font-size-200"></i></div></li>
+									<li onClick="selectSocial('social4')" id="btnsocial4" class="list-inline-item paragraphTitle m-0 py-1 title-selection"><div class="text-center"><i class="fab fa-youtube-square font-size-200"></i></div></li>
+								</ul>
+							</div>
+							<div class="container-fluid" id="social1" style="display:block; height:350px">
+								<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSchoolofRockLDN%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+							</div>
+							<div class="container-fluid" id="social2" style="display:none; height:350px">
+								<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bwo_ZO9n_hY/" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Bwo_ZO9n_hY/" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 10% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 2.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/Bwo_ZO9n_hY/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">I was living by this pro tip until work interrupted. The post #Easter struggle is real.</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/schoolofrockuk/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> School of Rock</a> (@schoolofrockuk) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-04-24T13:46:44+00:00">Apr 24, 2019 at 6:46am PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+							</div>
+							<div class="container-fluid" id="social3" style="display:none; height:350px">
+								<a class="twitter-timeline" href="https://twitter.com/SchoolOfRockUK?ref_src=twsrc%5Etfw" height="350" width="500">Tweets by SchoolOfRockUK</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</div>
+							<div class="container-fluid" id="social4" style="display:none; height:350px">youtube feed</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--PLOT-->
+				<div class="col">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="h2 paragraphTitle container-fluid">Plot</div>
+						</div>
+						<div class="row">
+							<p>Based on the film of the same name, School of Rock—The Musical tells the story of wannabe rock star Dewey Finn, who poses as a substitute teacher at a prestigious prep school, while impersonating his best friend, Ned Schneebly. When he discovers his students are musical talents, he enlists his fifth-graders to form a rock group and conquer the Battle of the Bands, in order to achieve his own dream of being a famous rock star.</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="container-fluid px-0 mt-5">
+		<!--<div class="row h5 titleSection">Social Feeds</div> -->
+			<div class="container-fluid p-0 m-o">
+				<div class="inline-list-user-profile">
+					<ul class="list-inline d-flex justify-content-around align-items-end mb-0">
+						<li onClick="selectReview('revw1')" id="btnrevw1" class="list-inline-item paragraphTitle m-0 py-3 title-selection"><div class="text-center">Newspaper Review</div></li>
+						<li onClick="selectReview('revw2')" id="btnrevw2" class="list-inline-item paragraphTitle m-0 py-3 title-selection"><div class="text-center">User Review</div></li>
+					</ul>
+				</div>
+				<div class="container-fluid" id="revw1" style="display:block; background-color:RGBA(102, 2, 22, 1.00);">
+					<div class="row justify-content-center">
+						<!--Template card
+
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, vitae.
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">Newspaper title</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+-->
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								Andrew Lloyd Webber's most exuberant show in years
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">The Sunday Telegraph</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								A ridiculously entertaining new show
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">The Daily Telegraph</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								‘School of Rock – The Musical’ is quite good fun.
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">The Indipendent</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								Uplifting show!
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">The Guardian</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								Enjoyable, fun, entertaining, best show in town!
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">Daily News</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								The best 3 hours money can buy!!
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">WhatsOnStageAward</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+				<div class="container-fluid" id="revw2" style="display:none; background-color:RGBA(102, 2, 22, 1.00);">
+					<div class="row justify-content-center">
+						<!--Template card
+						<div class="card col-3 m-4">
+							<div class="row">
+								<div class="col-2 p-2 mx-3">
+									<img src="img/50x70.png" alt="profile-img" height="30" width="30">
+								</div>
+								<div class="col align-self-center p-2 mx-0">Nickname</div>
+								<div class="col-3 align-self-center p-2 mx-0 font-size-80">28-Jul-18</div>
+							</div>
+							<div class="row font-size-120 py-1 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row p-3 text-justify font-size-90">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tempore vel nesciunt dolores accusantium ratione velit debitis consequuntur quis facilis? Atque enim, iure reiciendis eaque.
+							</div>
+						</div>-->
+						<div class="card col-3 m-4">
+							<div class="row">
+								<div class="col-2 p-2 mx-3">
+									<img src="img/actor-profile/ruthie-ann-miles.jpg" alt="profile-img" height="30" width="30">
+								</div>
+								<div class="col align-self-center p-2 mx-0">Hairspray</div>
+								<div class="col-3 align-self-center p-2 mx-0 font-size-80">28-Feb-19</div>
+							</div>
+							<div class="row font-size-120 py-1 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row p-3 text-justify font-size-90">
+								After loving the moview, the musical was literally better as it is live on stage!!!!!
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row">
+								<div class="col-2 p-2 mx-3">
+									<img src="img/actor-profile/craig-gallivan.jpg" alt="profile-img" height="30" width="30">
+								</div>
+								<div class="col align-self-center p-2 mx-0">Nick24601</div>
+								<div class="col-3 align-self-center p-2 mx-0 font-size-80">28-Jul-18</div>
+							</div>
+							<div class="row font-size-120 py-1 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row p-3 text-justify font-size-90">
+							This is a must see!
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row">
+								<div class="col-2 p-2 mx-3">
+									<img src="img/actor-profile/hannah-stratton.jpg" alt="profile-img" height="30" width="30">
+								</div>
+								<div class="col align-self-center p-2 mx-0">Kami</div>
+								<div class="col-3 align-self-center p-2 mx-0 font-size-80">15-JAN-19</div>
+							</div>
+							<div class="row font-size-120 py-1 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row p-3 text-justify font-size-90">
+								Even tho we were sitting a bit far back, the show engaged with the whole audience amazingly, the guy who played Dewey was a true Jack Black!!!
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row">
+								<div class="col-2 p-2 mx-3">
+									<img src="img/actor-profile/claudia-kariuki.jpg" alt="profile-img" height="30" width="30">
+								</div>
+								<div class="col align-self-center p-2 mx-0">Hellvetica</div>
+								<div class="col-3 align-self-center p-2 mx-0 font-size-80">28-Jul-18</div>
+							</div>
+							<div class="row font-size-120 py-1 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row p-3 text-justify font-size-90">
+								This show is absolutely amazing!!! It is a must see on the west end!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid my-4">
+			<div class="container">
+				<div class="row">
+					<div class="h2 paragraphTitle container-fluid">Rewards</div>
+				</div>
+				<div class="row">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="">Year</th>
+								<th scope="">Award</th>
+								<th scope="">Type</th>
+								<th scope="">Result</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="">2017</td>
+								<td class="">Best New Musical</td>
+								<td class="">WhatsOnStage Award</td>
+								<td class="">Won</td>
+							</tr>
+							<tr>
+								<td class="">2017</td>
+								<td class="">Best New Musical</td>
+								<td class="">Laurence Olivier Award</td>
+								<td class="">Nominated</td>
+							</tr>
+							<tr>
+								<td class="">2017</td>
+								<td class="">Best Actor in a Musical (David Fynn)</td>
+								<td class="">Laurence Olivier Award</td>
+								<td class="">Nominated</td>
+							</tr>
+							<tr>
+								<td class="">2017</td>
+								<td class="">Outstanding Achievement in Music (Childre's bands player)</td>
+								<td class="">Laurence Olivier Award</td>
+								<td class="">Won</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+			<div class="container-fluid p-0 mt-5">
+				<div class="container-fluid p-0 inline-list-user-profile p-0">
+					<ul class="list-inline container-fluid d-flex justify-content-around align-items-end mb-0">
+					  <li onClick="selectSection('sect1')" id="btnsect1" class="list-inline-item paragraphTitle h4 m-0 py-3"><div class="text-center">Cast</div></li>
+					  <li onClick="selectSection('sect2')" id="btnsect2" class="list-inline-item paragraphTitle h4 m-0 py-3"><div class="text-center">Creative Team</div></li>
+					  <li onClick="selectSection('sect3')" id="btnsect3" class="list-inline-item paragraphTitle h4 m-0 py-3"><div class="text-center">Technical Team</div></li>
+					</ul>
+				<!--<div class="col paragraphTitle h4"><div class="container text-center">Reviews</div></div>
+				<div class="col paragraphTitle h4"><div class="container text-center">Shows</div></div>
+				<div class="col paragraphTitle h4"><div class="container text-center">Theatres</div></div>
+				<div class="col paragraphTitle h4"><div class="container text-center">Country</div></div>  -->
+
+
+				</div>
+				<!--CONTAINER FOR CAST LIST-->
+				<div class="container-fluid karla " id="sect1" style="display:block">
+					<div class="row no-gutters">
+						<div class="col">
+							<table class="table">
+								<thead>
+									<tr class="">
+										<th scope="col" class="align-middle paragraphTitle"><i class="fas fa-filter font-size-180"></i></th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Name</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Role</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Production</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Debut</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Last Show</th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-star font-size-180"></i></th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-heart font-size-180"></i></th>
+										<!--<th scope="col">Edit</th> -->
+									</tr>
+								</thead>
+								<tbody>
+									<!-- .. Template to add a row in the table
+
+									<tr>
+									<td scope="">IMG</td>
+									<td>Name and Surname</td>
+									<td>Production</td>
+									<td>Debut</td>
+									<td>Last Show</td>
+									<td>Rate</td>
+									<td>Fave</td>
+									</tr>
+
+
+
+									-->
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/alan-pearson.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Alan Pearson</td>
+										<td class="align-middle">Ned Schneebly</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/alex-tomkins.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Alex Tomkins</td>
+										<td class="align-middle">Dewey Finn (Alternate)</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-prosser.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Prosser</td>
+										<td class="align-middle">Swing</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-rees.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Rees</td>
+										<td class="align-middle">Mr Mooneyham</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4.95/5</td>
+										<td class="align-middle">6K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/billy-mitchell.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Billy Mitchell</td>
+										<td class="align-middle">Swing</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/cassandra-mccowan.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Cassandra McCowan</td>
+										<td class="align-middle">Mrs Hathaway</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">30-AUG-18</td>
+										<td class="align-middle">4.75/5</td>
+										<td class="align-middle">3.5K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/catherine-morris.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Catherine Morris</td>
+										<td class="align-middle">Swing</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">13-SEP-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+
+								</tbody>
+							</table>				
+						</div>
+					</div>
+				</div>
+				<!--CONTAINER FOR CREATIVE TEAM-->
+				<div class="container-fluid" id="sect2" style="display:none">
+					<div class="row no-gutters">
+						<div class="col">
+							<table class="table">
+								<thead>
+									<tr class="">
+										<th scope="col" class="align-middle paragraphTitle font-size-110"></th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Name</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Role</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Production</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Debut</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Last Show</th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-star font-size-150"></i></th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-heart font-size-150"></i></th>
+										<!--<th scope="col">Edit</th> -->
+									</tr>
+								</thead>
+								<tbody>
+									<!-- .. Template to add a row in the table
+									<tr>
+									<td scope="">IMG</td>
+									<td>Name and Surname</td>
+									<td>Production</td>
+									<td>Debut</td>
+									<td>Last Show</td>
+									<td>Rate</td>
+									<td>Fave</td>
+									</tr>
+									-->
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/alan-pearson.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Alan Pearson</td>
+										<td class="align-middle">Director</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/alex-tomkins.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Alex Tomkins</td>
+										<td class="align-middle">CHoreographer</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-prosser.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Prosser</td>
+										<td class="align-middle">Set Designer</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-rees.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Rees</td>
+										<td class="align-middle">Customer Designer</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4.95/5</td>
+										<td class="align-middle">6K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/billy-mitchell.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Billy Mitchell</td>
+										<td class="align-middle">Sound Designer</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/cassandra-mccowan.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Cassandra McCowan</td>
+										<td class="align-middle">Lighting Designer</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">30-AUG-18</td>
+										<td class="align-middle">4.75/5</td>
+										<td class="align-middle">3.5K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/catherine-morris.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Catherine Morris</td>
+										<td class="align-middle">Musical Supervisor</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">13-SEP-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+								</tbody>
+							</table>				
+						</div>
+					</div>
+				</div>
+				<!--CONTAINER FOR TECHNICAL TEAM, STILL TO BE PROPERLY DEFINED AS IT NEED MORE STUDY TO UNDERSTAND EXACTLY WHAT IC COULD BE-->
+				<div class="container-fluid" id="sect3" style="display:none">
+					<div class="row no-gutters">
+						<div class="col">
+							<table class="table">
+								<thead>
+									<tr class="">
+										<th scope="col" class="align-middle paragraphTitle font-size-110"></th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Name</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Role</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Production</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Debut</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Last Show</th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-star font-size-150"></i></th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-heart font-size-150"></i></th>
+										<!--<th scope="col">Edit</th> -->
+									</tr>
+								</thead>
+								<tbody>
+									<!-- .. Template to add a row in the table
+									<tr>
+									<td scope="">IMG</td>
+									<td>Name and Surname</td>
+									<td>Production</td>
+									<td>Debut</td>
+									<td>Last Show</td>
+									<td>Rate</td>
+									<td>Fave</td>
+									</tr>
+									-->
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/rob-falconer.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Alan Pearson</td>
+										<td class="align-middle">Production Manager</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/paul-kemble.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Paul Kemble</td>
+										<td class="align-middle">Company Stage Manager</td>
+										<td class="align-middle">#1 Nationa UK Tour</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-prosser.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Prosser</td>
+										<td class="align-middle">Tech ASM Swing</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-rees.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Rees</td>
+										<td class="align-middle">Sound 1</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4.95/5</td>
+										<td class="align-middle">6K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/billy-mitchell.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Billy Mitchell</td>
+										<td class="align-middle">Sound 2</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/cassandra-mccowan.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Cassandra McCowan</td>
+										<td class="align-middle">LX 1</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">30-AUG-18</td>
+										<td class="align-middle">4.75/5</td>
+										<td class="align-middle">3.5K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/catherine-morris.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Catherine Morris</td>
+										<td class="align-middle">Head Of Wardrabe</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">13-SEP-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+								</tbody>
+							</table>				
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
+	<footer class="container-fluid mt-4 pt-4 karla">
+		<div class="row text-center">
+			<div class="col"><p class="container text-center">Who We Are</p></div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Help Us</p></div>
+				<div class="row container mt-2">
+					<p class="container text-justify small">If you have any advice or you see that some details are wrong, do not hesitate to contact us and let us know what we should implement, or change about the website</p>
+				</div>
+			</div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Contact Us</p></div>
+				<div class="row align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-envelope"></i></div>
+					<div class="col small">emailoftheadministrator@gmail.com</div>
+				</div>
+				<div class="row container align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-phone"></i></div>
+					<div class="col small text-left">02072447653</div>
+				</div>
+				<div class="row container align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-map-marker"></i></div>
+					<div class="col small">
+						<div class="row container">Address</div>
+						<div class="row container">City</div>
+						<div class="row container">PostCode</div>
+					</div>
+				</div>
+			</div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Social</p></div>
+				<div class="row container">
+					<div class="col m-o font-size-200"><i class="fab fa-facebook-square"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-twitter-square"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-instagram"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-youtube-square"></i></div>
+					<!--<div class="col-2 m-0 font-size-200"><i class="fab fa-snapchat-square"></i></div> -->
+				</div>
+			</div>
+		</div>
+		<div class="row mt-4">
+		  <div class="container-fluid text-center">Copyright by Andrea Bizzotto</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<!--FANCYBOX-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+	
+	<!--JS FOR SLICK SLIDER-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(document).on('ready', function() {
+	  $(".regular").slick({
+		dots: true,
+		infinite: true,
+		slidesToShow: 5,
+		slidesToScroll: 1
+	  });
+	  $(".center").slick({
+		dots: true,
+		infinite: true,
+		centerMode: true,
+		slidesToShow: 5,
+		slidesToScroll: 1
+	  });
+		$(".regular-double").slick({
+		dots: true,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1
+	  });
+
+	  $(".variable").slick({
+		dots: true,
+		infinite: true,
+		variableWidth: true
+	  });
+	  $(".lazy").slick({
+		lazyLoad: 'ondemand', // ondemand progressive anticipated
+		infinite: true
+	  });
+	});
+	</script>
+
+	
+</body>
+</html>

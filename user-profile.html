@@ -1,0 +1,790 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!--STYLESHEET-->
+		<link href="prova.css" rel="stylesheet" type="text/css">
+		<!--FONTS --- font-family: 'Roboto Slab', serif; --- font-family: 'Karla', sans-serif; --- 	font-family: 'Montserrat', sans-serif; -->
+		<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Montserrat:400,500,600,700,700i,900|Roboto+Slab:300,400,700" rel="stylesheet">
+		<!--FONTAWESOME STYLESHEET FOR ICONS-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> <!--STYLESHEET FOR BOOTSTRAP-->
+		
+		<!--JAAVASCRIPT FOR THE BUTTONS -->
+		<script>
+		var sects = ["sect1", "sect2"]
+		function selectSection(s, event){
+			for (var sect in sects) {
+				if (sect != s) {
+					document.getElementById(sects[sect]).style.display = "none";
+					document.getElementById("btn"+sects[sect]).style.background = "rgba(40, 2, 22, 1.00)";
+					document.getElementById("btn"+sects[sect]).style.color = "white";
+				}
+			}
+			document.getElementById(s).style.display = "block";
+			document.getElementById("btn"+s).style.background = "rgba(143, 27, 50, 1.00)";	
+		}
+		</script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		
+		<title>User</title>
+	</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-nav navbar-expand-md fixed-top mb-4 px-3" style="line-height: 100px">
+			<a class="navbar-brand" href="prova.html">
+				<img src="img/logo.png" alt="logo" width="300">
+			</a>
+			<div id="navbarCollapse" class="collapse navbar-collapse container-fluid float-right">
+				<ul class="navbar navbar-nav mr-auto align-items-end container align-items-center">
+					<li class="nav-item mx-2"><a class="nav-link font-size-180" data-toggle="collapse" href="#navbar-header-search" role="button" aria-expanded="false" aria-controls="navbar-header-search"><i class="fas fa-search"></i></a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="#">News</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="theatre.html">Theatre</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="production.html">Production</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="calendar.html">Calendar</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="#"><i class="fas fa-sign-in-alt font-size-150"></i> Login</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="collapse" id="navbar-header-search">
+			<form class="p-2 px-5" style="margin-top:100px">
+				<div class="row" >
+					<i class="fas fa-search font-size-180 mx-3"></i>
+					<input class="p-2 container" type="text" placeholder="Search">
+				</div>
+			</form>
+		</div>
+	</header>
+	<main class="mt-5 pt-5" role="main">
+		<!--line for title, address, rating and favorite-->
+		<div class="container mt-3 pt-0 mb-2">
+			<div class="row my-4">
+				<div class="col-auto">
+					<img src="img/user-profile/user-profile.jpg" alt="user-avatar" height="120" width="120">
+				</div>
+				<div class="col mr-3">
+					<div class="row">
+						<div class="col h2 paragraphTitle">AndreaBizz8</div>	
+					</div>
+					<div class="row">
+						<div class="col-auto text-right">Top 10</div>
+						<div class="col-auto text-right">465 Reviews</div>
+					</div>
+				</div>
+			</div>
+			<div class="row my-4">
+				<div class="col">
+					<div class="container">
+						<!--<div class="row h4 paragraphTitle">Bio</div> -->
+						<div class="row">Andrea Bizzotto</div>
+						<div class="row">13 AUG 91 (ITALY)</div>
+						<div class="row">Male</div>
+						<div class="row">175 cm</div>
+						<div class="row">London (United Kingdom)</div>
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="container mt-3">
+						<div class="row h4 paragraphTitle">About Me</div>
+						<div class="row font-size-90">Hi! I am an italian guy who moved to UK few years ago, started to enjoy musical all over the world...from USA to Germany!</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--STATS OF THE USER-->
+		<div class="container-fluid p-0 " style="background-color:RGBA(40, 2, 22, 1.00);">
+				<div class="row justify-content-center p-0 m-0">
+					<p class="banner-title p-2 m-0">Statistics</p>
+				</div>
+				<div class="container-fluid show-presentation">
+					<div class="row py-3 px-5">
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Total Review</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">465</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Total Number of Shows</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">35</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Total Number of Production</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">45</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Theatres visited</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">50</p>
+							</div>
+						</div>
+					</div>
+					<hr class="stat-gen-show" style="color:white">
+					<div class="row py-3 px-5">
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Production Photo Review</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">150</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Actor Review</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">350</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Review Helpful</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">125</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Average Show Per Year</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">51.52</p>
+							</div>
+						</div>
+					</div>
+					<hr class="stat-gen-show" style="color:white">
+					<div class="row py-3 px-5">
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Country Visited</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">5</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Last Show Seen</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">School Of Rock</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Most Visited Country</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">United Kingdom</p>
+							</div>
+						</div>
+						<div class="col align-self-center stat-gen-show">
+							<div class="row justify-content-center">
+								<p class="font-size-110 m-0 p-0">Most Visited Theatre</p>
+							</div>
+							<div class="row justify-content-center ">
+								<p class="font-size-130 mb-0">Gillian Lynne Theatre</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="container-fluid my-4">
+			<div class="container">
+				<div class="h2 paragraphTitle">Theatre Timeline</div>
+			</div>
+			<iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1IMpA64RfzcA1BjmYLDvR6QWFNRoYi717RsqnNtBRO00&font=Default&lang=en&initial_zoom=2&height=650" width="100%" height="650" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+		</div>
+		<div class="container-fluid py-4" style="background-color:RGBA(102, 2, 22, 1.00);">
+			<div class="container">
+				<div class="row">
+					<p class="h2 paragraphTitle" style="color:white!important">Show</p>
+				</div>
+			</div>
+		<div class="container-fluid mt-3">
+			<div class="row justify-content-center">
+				<div class="col-3 card m-2">
+					<a href="show.html" style="color: black">
+						<div class="row">
+							<div class="d-inline-flex pl-0 mr-2 float-left">
+								<img src="img/poster-square130x130/schoolofrock.jpg" alt="logo-musical" width="120" height="120">
+							</div>
+							<div class="col">
+								<div class="row">
+									<h5 class="card-title font-size-110 font-weight-bold">School Of Rock</h5>
+								</div>
+								<div class="bottom-div mb-1 p-0 container-fluid">
+									<div class="row">
+										<div class="col mr-3">
+											<div class="row">
+												<h6 class="card-subtitle">82 times</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">3 productions</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">4 countries</h6>
+											</div>
+										</div>
+										<div class="col">
+											<div class="row p-0">
+												<div class="col-3 p-0"><i class="fa fa-star"></i></div>
+												<div class="col p-0">2.8K</div>
+											</div>
+											<div class="row p-0">
+												<div class="col-3 p-0 card-subtitle"><i class="fa fa-heart"></i></div>
+												<div class="col p-0 card-subtitle">1.5K</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-3 card m-2">
+					<a href="show.html" style="color: black">
+						<div class="row">
+							<div class="d-inline-flex pl-0 mr-2 float-left">
+								<img src="img/poster-square130x130/aboutadonkey.jpg" alt="logo-musical" width="120" height="120">
+							</div>
+							<div class="col">
+								<div class="row">
+									<h5 class="card-title font-size-110 font-weight-bold">About a Donkey</h5>
+								</div>
+								<div class="bottom-div mb-1 p-0 container-fluid">
+									<div class="row">
+										<div class="col mr-3">
+											<div class="row">
+												<h6 class="card-subtitle">1 times</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">1 productions</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">1 countries</h6>
+											</div>
+										</div>
+										<div class="col">
+											<div class="row p-0">
+												<div class="col-3 p-0"><i class="fa fa-star"></i></div>
+												<div class="col p-0">2.8K</div>
+											</div>
+											<div class="row p-0">
+												<div class="col-3 p-0 card-subtitle"><i class="fa fa-heart"></i></div>
+												<div class="col p-0 card-subtitle">1.5K</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-3 card m-2">
+					<a href="show.html" style="color: black">
+						<div class="row">
+							<div class="d-inline-flex pl-0 mr-2 float-left">
+								<img src="img/poster-square130x130/lesmiserable.jpg" alt="logo-musical" width="120" height="120">
+							</div>
+							<div class="col">
+								<div class="row">
+									<h5 class="card-title font-size-110 font-weight-bold">Les Miserable</h5>
+								</div>
+								<div class="bottom-div mb-1 p-0 container-fluid">
+									<div class="row">
+										<div class="col mr-3">
+											<div class="row">
+												<h6 class="card-subtitle">9 times</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">3 productions</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">4 countries</h6>
+											</div>
+										</div>
+										<div class="col">
+											<div class="row p-0">
+												<div class="col-3 p-0"><i class="fa fa-star"></i></div>
+												<div class="col p-0">2.8K</div>
+											</div>
+											<div class="row p-0">
+												<div class="col-3 p-0 card-subtitle"><i class="fa fa-heart"></i></div>
+												<div class="col p-0 card-subtitle">1.5K</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-3 card m-2">
+					<a href="show.html" style="color: black">
+						<div class="row">
+							<div class="d-inline-flex pl-0 mr-2 float-left">
+								<img src="img/poster-square130x130/harrypotterandthecursedchild.jpg" alt="logo-musical" width="120" height="120">
+							</div>
+							<div class="col">
+								<div class="row">
+									<h5 class="card-title font-size-110 font-weight-bold">Harry Potter and the Cursed Childk</h5>
+								</div>
+								<div class="bottom-div mb-1 p-0 container-fluid">
+									<div class="row">
+										<div class="col mr-3">
+											<div class="row">
+												<h6 class="card-subtitle">10 times</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">2 productions</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">1 countries</h6>
+											</div>
+										</div>
+										<div class="col">
+											<div class="row p-0">
+												<div class="col-3 p-0"><i class="fa fa-star"></i></div>
+												<div class="col p-0">2.8K</div>
+											</div>
+											<div class="row p-0">
+												<div class="col-3 p-0 card-subtitle"><i class="fa fa-heart"></i></div>
+												<div class="col p-0 card-subtitle">1.5K</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-3 card m-2">
+					<a href="show.html" style="color: black">
+						<div class="row">
+							<div class="d-inline-flex pl-0 mr-2 float-left">
+								<img src="img/poster-square130x130/dear-evan-hansen.jpg" alt="logo-musical" width="120" height="120">
+							</div>
+							<div class="col">
+								<div class="row">
+									<h5 class="card-title font-size-110 font-weight-bold">Dear Evan Hansen</h5>
+								</div>
+								<div class="bottom-div mb-1 p-0 container-fluid">
+									<div class="row">
+										<div class="col mr-3">
+											<div class="row">
+												<h6 class="card-subtitle">8 times</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">2 productions</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">2 countries</h6>
+											</div>
+										</div>
+										<div class="col">
+											<div class="row p-0">
+												<div class="col-3 p-0"><i class="fa fa-star"></i></div>
+												<div class="col p-0">2.8K</div>
+											</div>
+											<div class="row p-0">
+												<div class="col-3 p-0 card-subtitle"><i class="fa fa-heart"></i></div>
+												<div class="col p-0 card-subtitle">1.5K</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-3 card m-2">
+					<a href="show.html" style="color: black">
+						<div class="row">
+							<div class="d-inline-flex pl-0 mr-2 float-left">
+								<img src="img/poster-square130x130/comefromaway.jpg" alt="logo-musical" width="120" height="120">
+							</div>
+							<div class="col">
+								<div class="row">
+									<h5 class="card-title font-size-110 font-weight-bold">Come From Away</h5>
+								</div>
+								<div class="bottom-div mb-1 p-0 container-fluid">
+									<div class="row">
+										<div class="col mr-3">
+											<div class="row">
+												<h6 class="card-subtitle">6 times</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">2 productions</h6>
+											</div>
+											<div class="row">
+												<h6 class="card-subtitle">2 countries</h6>
+											</div>
+										</div>
+										<div class="col">
+											<div class="row p-0">
+												<div class="col-3 p-0"><i class="fa fa-star"></i></div>
+												<div class="col p-0">2.8K</div>
+											</div>
+											<div class="row p-0">
+												<div class="col-3 p-0 card-subtitle"><i class="fa fa-heart"></i></div>
+												<div class="col p-0 card-subtitle">1.5K</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>		
+		</div>
+		</div>
+		
+		<div class="container-fluid py-4">
+			<div class="container">
+				<div class="row">
+					<p class="h2 paragraphTitle">Theatre</p>
+				</div>
+			</div>
+		<div class="container-fluid mt-3">
+			<div class="row justify-content-center">
+				<div class="col-3 card m-2">
+					<div class="row">
+						<div class="d-inline-flex pl-0 mr-2 float-left">
+							<img src="img/theatre-square-130x130/1.jpg" alt="logo-musical" width="120" height="120">
+						</div>
+						<div class="col">
+							<div class="row">
+								<h5 class="card-title font-size-110 font-weight-bold">Shubert Theatre</h5>
+							</div>
+							<div class="row">
+								<h6 class="card-subtitle">New York</h6>
+							</div>
+							<div class="bottom-div mb-1 p-0 container-fluid">
+								<div class="row">
+									<div class="col mr-3">
+										
+										<div class="row">
+											<h6 class="card-subtitle">Visited 3 times</h6>
+										</div>
+									</div>
+									<div class="col">
+										<div class="row p-0">
+											<div class="col-3 p-0"><i class="fa fa-star"></i></div>
+											<div class="col p-0">4.75/5</div>
+										</div>
+										<div class="row p-0">
+											<div class="col-3 p-0 card-subtitle"><i class="fa fa-heart"></i></div>
+											<div class="col p-0 card-subtitle">82K</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 card m-2">
+					<div class="row">
+						<div class="d-inline-flex pl-0 mr-2 float-left">
+							<img src="img/theatre-square-130x130/2.jpg" alt="logo-musical" width="120" height="120">
+						</div>
+						<div class="col">
+							<div class="row">
+								<h5 class="card-title font-size-110 font-weight-bold">Victoria Palace Theatre</h5>
+							</div>
+							<div class="row">
+								<h6 class="card-subtitle">London</h6>
+							</div>
+							<div class="bottom-div mb-1 p-0 container-fluid">
+								<div class="row">
+									<div class="col mr-3">
+										
+										<div class="row">
+											<h6 class="card-subtitle">Visited 79 times</h6>
+										</div>
+									</div>
+									<div class="col">
+										<div class="row p-0">
+											<div class="col-3 p-0"><i class="fa fa-star"></i></div>
+											<div class="col p-0">4.75/5</div>
+										</div>
+										<div class="row p-0">
+											<div class="col-3 p-0 card-subtitle"><i class="fa fa-heart"></i></div>
+											<div class="col p-0 card-subtitle">821K</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 card m-2">
+					<div class="row">
+						<div class="d-inline-flex pl-0 mr-2 float-left">
+							<img src="img/theatre-square-130x130/3.jpg" alt="logo-musical" width="120" height="120">
+						</div>
+						<div class="col">
+							<div class="row">
+								<h5 class="card-title font-size-110 font-weight-bold">Music Box Theatre</h5>
+							</div>
+							<div class="row">
+								<h6 class="card-subtitle">New York</h6>
+							</div>
+							<div class="bottom-div mb-1 p-0 container-fluid">
+								<div class="row">
+									<div class="col mr-3">
+										
+										<div class="row">
+											<h6 class="card-subtitle">Visited 8 times</h6>
+										</div>
+									</div>
+									<div class="col">
+										<div class="row p-0">
+											<div class="col-3 p-0"><i class="fa fa-star"></i></div>
+											<div class="col p-0">4.75/5</div>
+										</div>
+										<div class="row p-0">
+											<div class="col-3 p-0 card-subtitle"><i class="fa fa-heart"></i></div>
+											<div class="col p-0 card-subtitle">1.2M</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 card m-2">
+					<div class="row">
+						<div class="d-inline-flex pl-0 mr-2 float-left">
+							<img src="img/theatre-square-130x130/4.jpg" alt="logo-musical" width="120" height="120">
+						</div>
+						<div class="col">
+							<div class="row">
+								<h5 class="card-title font-size-110 font-weight-bold">Queens Theatre</h5>
+							</div>
+							<div class="row">
+								<h6 class="card-subtitle">London</h6>
+							</div>
+							<div class="bottom-div mb-1 p-0 container-fluid">
+								<div class="row">
+									<div class="col mr-3">
+										
+										<div class="row">
+											<h6 class="card-subtitle">Visited 8 times</h6>
+										</div>
+									</div>
+									<div class="col">
+										<div class="row p-0">
+											<div class="col-3 p-0"><i class="fa fa-star"></i></div>
+											<div class="col p-0">4.75/5</div>
+										</div>
+										<div class="row p-0">
+											<div class="col-3 p-0 card-subtitle"><i class="fa fa-heart"></i></div>
+											<div class="col p-0 card-subtitle">3.2M</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		</div>
+		
+		
+		<div class="container-fluid p-0 inline-list-user-profile">
+			
+			<ul class="list-inline container-fluid d-flex justify-content-around align-items-end mb-0">
+			  <li onClick="selectSection('sect1')" id="btnsect1" class="list-inline-item paragraphTitle h4 m-0 py-3"><div class="text-center">Reviews</div></li>
+			  <li onClick="selectSection('sect2')" id="btnsect2" class="list-inline-item paragraphTitle h4 m-0 py-3"><div class="text-center">Country</div></li>
+			</ul>
+		<!--<div class="col paragraphTitle h4"><div class="container text-center">Reviews</div></div>
+		<div class="col paragraphTitle h4"><div class="container text-center">Shows</div></div>
+		<div class="col paragraphTitle h4"><div class="container text-center">Theatres</div></div>
+		<div class="col paragraphTitle h4"><div class="container text-center">Country</div></div>  -->
+
+
+		</div>
+		<!--CONTAINER FOR REVIEWS-->
+		<div class="container-fluid" id="sect1" style="display:block">
+			<div class="row no-gutters">
+				<div class="col">
+
+				<table class="table">
+					<thead>
+						<tr class="">
+							<th scope="col" class="align-middle paragraphTitle font-size-110">Title</th>
+							<th scope="col" class="align-middle paragraphTitle font-size-110">Production</th>
+							<th scope="col" class="align-middle paragraphTitle font-size-110">Theatre</th>
+							<th scope="col" class="align-middle paragraphTitle font-size-110">Date</th>
+							<th scope="col" class="align-middle paragraphTitle font-size-110">Seat</th>
+							<th scope="col" class="align-middle paragraphTitle font-size-110">Rating</th>
+							<th scope="col" class="align-middle small font-weight-bold paragraphTitle font-size-110">View<br>Photo</th>
+							<th scope="col" class="align-middle small font-weight-bold paragraphTitle font-size-110">Ticket<br>Photo</th>
+							<!--<th scope="col">Edit</th> -->
+						</tr>
+					</thead>
+					<tbody>
+						<!-- .. Template to add a row in the table
+
+						<tr>
+						<td scope="">School Of Rock</td>
+						<td>Production</td>
+						<td>date</td>
+						<td>Seat</td>
+						<td>Rating</td>
+						<td><i class="fa fa-check-circle text-center font-size-120"></i></td>
+						<td><i class="fa fa-times-circle text-center font-size-120"></i></td>
+						</tr>
+
+
+
+						-->
+						<tr>
+							<td scope="">School Of Rock</td>
+							<td>West End</td>
+							<td>Gillian Lynne Theatre</td>
+							<td>24-APR-19</td>
+							<td>Stalls A 39</td>
+							<td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+							<td><i class="fa fa-check-circle text-center font-size-120"></i></td>
+							<td><i class="fa fa-times-circle text-center font-size-120"></i></td>
+						</tr>
+						<tr>
+							<td scope="">Everybody's Talking About Jamie</td>
+							<td>West End</td>
+							<td>Gillian Lynne Theatre</td>
+							<td>24-05-18</td>
+							<td>Stalls A 38</td>
+							<td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+							<td><i class="fa fa-check-circle text-center font-size-120"></i></td>
+							<td><i class="fa fa-times-circle text-center font-size-120"></i></td>
+						</tr>
+						<tr>
+							<td scope="">School Of Rock</td>
+							<td>West End</td>
+							<td>Gillian Lynne Theatre</td>
+							<td>15-JAN-18</td>
+							<td>Stalls C 17</td>
+							<td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+							<td><i class="fa fa-check-circle text-center font-size-120"></i></td>
+							<td><i class="fa fa-times-circle text-center font-size-120"></i></td>
+						</tr>
+					</tbody>
+				</table>				
+				</div>
+			</div>
+		</div>
+
+
+		<!--CONTAINER FOR WORLD    add map and JS for colors -->
+		<div class="container-fluid mt-3" id="sect2" style="display:none">
+			<script>
+				google.charts.load('current', {
+        'packages':['geochart'],
+        'mapsApiKey': 'AIzaSyAXLeDLt6fFiL1SEB-njL1VlTATukDv5NU'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Number of Show Visited'],
+          ['Germany', 200],
+          ['United Kingdom', 200],
+          ['Spain', 200],
+          ['Italy', 800],
+          ['Holland', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+			</script>
+			<div id="regions_div" style="width: 1125; height: 625;"></div>
+		</div>
+		
+	</main>
+	<footer class="container-fluid mt-4 pt-4 karla">
+		<div class="row text-center">
+			<div class="col"><p class="container text-center">Who We Are</p></div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Help Us</p></div>
+				<div class="row container mt-2">
+					<p class="container text-center small">If you have any advice or you see that some details are wrong, do not hesitate to contact us and let us know what we should implement, or change about the website</p>
+
+				</div>
+			</div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Contact Us</p></div>
+				<div class="row align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-envelope"></i></div>
+					<div class="col small">emailoftheadministrator@gmail.com</div>
+				</div>
+				<div class="row container align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-phone"></i></div>
+					<div class="col small text-left">02072447653</div>
+				</div>
+				<div class="row container align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-map-marker"></i></div>
+					<div class="col small">
+						<div class="row container">Address</div>
+						<div class="row container">City</div>
+						<div class="row container">PostCode</div>
+					</div>
+				</div>
+			</div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Social</p></div>
+				<div class="row container">
+					<div class="col m-o font-size-200"><i class="fab fa-facebook-square"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-twitter-square"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-instagram"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-youtube-square"></i></div>
+					<!--<div class="col-2 m-0 font-size-200"><i class="fab fa-snapchat-square"></i></div> -->
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row mt-4">
+		  <div class="container-fluid text-center">Copyright by Andrea Bizzotto</div>
+		</div>
+	</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>

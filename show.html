@@ -1,0 +1,1150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+			<!--STYLESHEET-->
+		<link href="prova.css" rel="stylesheet" type="text/css">
+		 <!--FONTS --- font-family: 'Roboto Slab', serif; --- font-family: 'Karla', sans-serif; --- 	font-family: 'Montserrat', sans-serif; -->
+		<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Montserrat:400,500,600,700,700i,900|Roboto+Slab:300,400,700" rel="stylesheet">
+			<!--FONTAWESOME STYLESHEET FOR ICONS-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> <!--STYLESHEET FOR BOOTSTRAP-->
+			<!-- fancybox -->
+		<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.css" integrity="sha256-yeunUAqRTmLSd+/km787C2J38++Xl110wMQ1GT81ubQ=" crossorigin="anonymous" />
+			<!--SLICKNAV FR SLIDER-->
+		<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+			<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<!-- JAAVASCRIPT -->
+	<!--JAAVASCRIPT FOR THE BUTTONS -->
+		<script>
+		var sects = ["sect1", "sect2","sect3"]
+		function selectSection(s, event){
+			for (var sect in sects) {
+				if (sect != s) {
+					document.getElementById(sects[sect]).style.display = "none";
+					document.getElementById("btn"+sects[sect]).style.background = "rgba(40, 2, 22, 1.00)";
+					document.getElementById("btn"+sects[sect]).style.color = "white";
+				}
+			}
+			document.getElementById(s).style.display = "block";
+			document.getElementById("btn"+s).style.background = "rgba(143, 27, 50, 1.00)";	
+		}
+		</script>
+<title>Show</title>
+</head>
+ 	
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-nav navbar-expand-md fixed-top mb-4 px-3" style="line-height: 100px">
+			<a class="navbar-brand" href="prova.html">
+				<img src="img/logo.png" alt="logo" width="300">
+			</a>
+			<div id="navbarCollapse" class="collapse navbar-collapse container-fluid float-right">
+				<ul class="navbar navbar-nav mr-auto align-items-end container align-items-center">
+					<li class="nav-item mx-2"><a class="nav-link font-size-180" data-toggle="collapse" href="#navbar-header-search" role="button" aria-expanded="false" aria-controls="navbar-header-search"><i class="fas fa-search"></i></a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="#">News</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="theatre.html">Theatre</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="production.html">Production</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="calendar.html">Calendar</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="#"><i class="fas fa-sign-in-alt font-size-150"></i> Login</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="collapse" id="navbar-header-search">
+			<form class="p-2 px-5" style="margin-top:100px">
+				<div class="row" >
+					<i class="fas fa-search font-size-180 mx-3"></i>
+					<input class="p-2 container" type="text" placeholder="Search">
+				</div>
+			</form>
+		</div>
+	</header>	
+	<main class="mt-5 pt-5" role="main">
+		<div class="container-fluid show-presentation" >
+		  <div class="container p-4" style="background-image:url(img/school-of-rock-800wx340h.jpg);background-repeat:no-repeat;background-position: right; background-size:auto 100%;">
+				<h1 class="title-musical-production roboto-slab pt-3">School of Rock The Musical</h1>
+				<!--<div class="font-size-150">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>-->
+					<div class="m-0 p-2" style="background-color:rgba(27,27,27,0.34); width:40%">
+						<p class="font-size-120 mb-0 pt-0 karla label-show-detail">Composer</p>
+						<p class="font-size-100 mb-0 pt-0 karla sub-title-musical-production">Sir Andrew Lloyd Webber</p>
+						<p class="font-size-120 mb-0 pt-0 karla label-show-detail">Lyrics</p>
+						<p class="font-size-100 mb-0 pt-0 karla sub-title-musical-production">Alain Boublil (French lyrics)</p>
+						<p class="font-size-100 mb-0 pt-0 karla sub-title-musical-production">Jean-Marc Natel (French lyrics)</p>
+						<p class="font-size-100 mb-0 pt-0 karla sub-title-musical-production">Herbert Kretzmer (English lyrics)</p>
+						<p class="font-size-100 mb-0 pt-0 karla sub-title-musical-production">James Fenton (English additional lyrics)</p>
+						<p class="font-size-120 mb-0 pt-0 karla label-show-detail">Playwright</p>
+						<p class="font-size-100 mb-0 pt-0 karla sub-title-musical-production">Sir Andrew Lloyd Webber</p>
+					</div>
+			  <!--
+				<div class="container">					
+					<div class="row mt-3">
+						<i class="far fa-clock font-size-200"></i>
+						<span class="font-size-150">2h 30min</span>
+					</div>
+					<div class="row mt-3">
+						<button class="btn btn-outline-light p-o">Add to favourite <i class="fas fa-heart font-size-150"></i></button>
+					</div>	
+				</div> -->
+			</div>
+		</div>
+		<div class="container-fluid " style="background-color:RGBA(40, 2, 22, 1.00);">
+			<div class="row py-3 px-5">
+				<div class="col align-self-center">
+					<div class="row justify-content-center stat-gen-show">
+						<i class="fas fa-heart font-size-200"></i>
+					</div>
+					<div class="row justify-content-center stat-gen-show">
+						<p class="font-size-130 mb-0">2.1k</p>
+					</div>
+				</div>
+				<div class="col align-self-center stat-gen-show">
+					<div class="row justify-content-center">
+						<i class="fa fa-star font-size-200"></i>
+					</div>
+					<div class="row justify-content-center">
+						<p class="font-size-130 mb-0">4.75/5</p>
+					</div>
+				</div>
+				<div class="col align-self-center stat-gen-show">
+					<div class="row justify-content-center">
+						<i class="far fa-clock font-size-200"></i>
+					</div>
+					<div class="row justify-content-center">
+						<p class="font-size-130 mb-0">210 min</p>
+					</div>
+				</div>
+				<div class="col align-self-center stat-gen-show">
+					<div class="row justify-content-center">
+						<p class="font-size-130 m-0 p-0">Total shows</p>
+					</div>
+					<div class="row justify-content-center">
+						<p class="font-size-130 mb-0">14.253</p>
+					</div>
+				</div>
+				<div class="col align-self-center stat-gen-show">
+					<div class="row justify-content-center">Productions</div>
+					<div class="row">
+						<div class="col">
+							<div class="row justify-content-center">
+								<p class="font-size-130 m-0 p-0">Total</p>
+							</div>
+							<div class="row justify-content-center">
+								<p class="font-size-130 mb-0">7</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="row justify-content-center">
+								<p class="font-size-130 m-0 p-0">Ongoing</p>
+							</div>
+							<div class="row justify-content-center">
+								<p class="font-size-130 mb-0">3</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col align-self-center stat-gen-show">
+					<div class="row justify-content-center">
+						<p class="font-size-130 m-0 p-0">Premiere</p>
+					</div>
+					<div class="row justify-content-center ">
+						<p class="font-size-130 mb-0">06 - Dec - 15</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="container mt-4">
+			<div class="row container align-self-center">
+				<div class="col-4 my-5 roboto-slab">
+					<div class="row h4 paragraphTitle justify-content-center"><span class="">Stats</span></div>
+					<div class="container">
+						<div class="row mt-2">
+							<div class="col">Total Review Received</div>
+							<div class="col-4">365</div>
+						</div>
+						<hr class="m-0 p-0 container" style="width:80%">
+						<div class="row mt-2">
+							<div class="col">Number of Productions</div>
+							<div class="col-4">7</div>
+						</div>
+						<hr class="m-0 p-0 container" style="width:80%">
+						<div class="row mt-2">
+							<div class="col">Theatres visited</div>
+							<div class="col-4">35</div>
+						</div>
+						<hr class="m-0 p-0 container" style="width:80%">
+						<div class="row mt-2">
+							<div class="col">Actors Involved</div>
+							<div class="col-4">452</div>
+						</div>
+						<hr class="m-0 p-0 container" style="width:80%">
+						<div class="row mt-2">
+							<div class="col">Overall Rating</div>
+							<div class="col-4">65th</div>
+						</div>
+						<hr class="m-0 p-0 container" style="width:80%">
+						<div class="row mt-2">
+							<div class="col">Total Roles Number</div>
+							<div class="col-4">25</div>
+						</div>
+						<hr class="m-0 p-0 container" style="width:80%">
+						<div class="row mt-2">
+							<div class="col">Number of songs</div>
+							<div class="col-4">21</div>
+						</div>
+					</div>
+				</div>
+				<div class="col my-5">
+					<div class="container-fluid">
+						<div class="row h4 paragraphTitle justify-content-center"><span class="">Plot</span></div>
+					</div>
+					<div class="row roboto-slab text-justify">
+						<p class="p-5">
+						Based on the film of the same name, School of Rock—The Musical tells the story of wannabe rock star Dewey Finn, who poses as a substitute teacher at a prestigious prep school, while impersonating his best friend, Ned Schneebly. When he discovers his students are musical talents, he enlists his fifth-graders to form a rock group and conquer the Battle of the Bands, in order to achieve his own dream of being a famous rock star.
+						</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="container-fluid m-0 py-4" style="background-color:RGBA(102, 2, 22, 1.00);">
+			<section class="container center slider my-0">
+				<div>
+					<a href="img/production/1.jpg" data-fancybox="gallery" data-caption="School Of Rock">
+						<img src="img/production/1.jpg" width="200" height="150">
+					</a>
+				</div>
+				<div>
+					<a href="img/production/2.jpg" data-fancybox="gallery" data-caption="School Of Rock">
+						<img src="img/production/2.jpg" width="200" height="150">
+					</a>
+				</div>
+				<div>
+					<a href="img/production/3.jpg" data-fancybox="gallery" data-caption="School Of Rock">
+						<img src="img/production/3.jpg" width="200" height="150">
+					</a>
+				</div>
+				<div>
+					<a href="img/production/4.jpg" data-fancybox="gallery" data-caption="School Of Rock">
+						<img src="img/production/4.jpg" width="200" height="150">
+					</a>
+				</div>
+				<div>
+					<a href="img/production/5.jpg" data-fancybox="gallery" data-caption="School Of Rock">
+						<img src="img/production/5.jpg" width="200" height="150">
+					</a>
+				</div>
+				<div>
+					<a href="img/production/6.jpg" data-fancybox="gallery" data-caption="School Of Rock">
+						<img src="img/production/6.jpg" width="200" height="150">
+					</a>
+				</div>
+			</section>
+		</div>
+
+		<div class="container-fluid my-4 m-0 p-0">
+			<div class="container">.
+				<div class="row"><p class="h2 paragraphTitle">Production History</p></div>
+			</div>
+			<div class="container-fluid">
+				<div class="row justify-content-center mt-3">
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/US-United-States-Flag.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">Broadway</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">15-dec-2015</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">20-jan-2019</p></div>
+								</div>
+								<div class="row">
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="star-card-prod fas fa-star"></i></div>
+											<div class="col star-card-prod">4.75/5</div>
+										</div>
+									</div>
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="fav-card-prod fas fa-heart"></i></div>
+											<div class="col fav-card-prod">875K</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="col-3 card m-2" href="production.html">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/United-Kingdom-flag-icon.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title" style="color:black">West End</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">22-OCT-2017</p></div>
+									<div class="col-auto p-0 showpage-production-date">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">ongoing</p></div>
+								</div>
+								<div class="row">
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="star-card-prod fas fa-star"></i></div>
+											<div class="col star-card-prod">4.75/5</div>
+										</div>
+									</div>
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="fav-card-prod fas fa-heart"></i></div>
+											<div class="col fav-card-prod">745K</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/US-United-States-Flag.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">#1 National US Tour</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">15-feb-2017</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-MAR-2020</p></div>
+								</div>
+								<div class="row">
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="star-card-prod fas fa-star"></i></div>
+											<div class="col star-card-prod">4.75/5</div>
+										</div>
+									</div>
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="fav-card-prod fas fa-heart"></i></div>
+											<div class="col fav-card-prod">789K</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/Australia-Flag-icon.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">Melbourne</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-jun-1995</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-MAR-2005</p></div>
+								</div>
+								<div class="row">
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="star-card-prod fas fa-star"></i></div>
+											<div class="col star-card-prod">4.75/5</div>
+										</div>
+									</div>
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="fav-card-prod fas fa-heart"></i></div>
+											<div class="col fav-card-prod">325K</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/China-Flag-icon.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">China</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-dec-2018</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-aug-2019</p></div>
+								</div>
+								<div class="row">
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="star-card-prod fas fa-star"></i></div>
+											<div class="col star-card-prod">4.75/5</div>
+										</div>
+									</div>
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="fav-card-prod fas fa-heart"></i></div>
+											<div class="col fav-card-prod">465K</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/South-Korea-icon.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">South Korea</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">TBK</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">TBK</p></div>
+								</div>
+								<div class="row">
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="star-card-prod fas fa-star"></i></div>
+											<div class="col star-card-prod">N/A</div>
+										</div>
+									</div>
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="fav-card-prod fas fa-heart"></i></div>
+											<div class="col fav-card-prod">N/A</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 card m-2">
+						<div class="row">
+							<div class="col-auto p-0 m-0">
+								<img src="img/Italy-Flag-icon.png" alt="flag" height="80" width="80">
+							</div>
+							<div class="col">
+								<div class="row justify-content-center mt-1 show-production-title">Italy</div>
+								<div class="row border-bottom-0 showpage-production-date">
+									<div class="col p-0"><p class="m-0 p-0 text-center">18-mar-2019</p></div>
+									<div class="col-auto p-0">-</div>
+									<div class="col p-0"><p class="m-0 p-0 text-center">25-MAR-2019</p></div>
+								</div>
+								<div class="row">
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="star-card-prod fas fa-star"></i></div>
+											<div class="col star-card-prod">4.75/5</div>
+										</div>
+									</div>
+									<div class="col font-size-80">
+										<div class="row">
+											<div class="col-1"><i class="fav-card-prod fas fa-heart"></i></div>
+											<div class="col fav-card-prod">15K</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid py-3" style="background-color: RGBA(102, 2, 22, 1.00);">
+		<div class="row">
+			<!--SECTION FOR THE DIFFERENT PRODUCTIONS-->
+			<div class="container">.
+				<div class="row"><p class="h2 paragraphTitle" style="color:white!important">User Reviews</p></div>
+			</div>
+			<div class="container-fluid py-3">
+				<div class="container-fluid">
+					<div class="row my-1 justify-content-center">
+						<!--Template card
+
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, vitae.
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">Newspaper title</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+	-->
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								Last night we witnessed the magnificent SOR bands giving us hope for the future of music!
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">AndreaBizz8</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								After seeing this show in 4 different countries, I can totally say this is the best show for family!
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">BaYJJKil</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								Amazed by the talent on stage!
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">GhialeHn</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								You can't rock as they do, but you will deffo enjoy it!
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">Yoshi</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								No matter how old you are, this is going to make you laugh all the way through!
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">FakeStu</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								If you haven't watch it yet, well better you grab a ticket and go! Absolutely BRILLIANT!!!
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">XStormX</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, vitae.
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">Newspaper title</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, vitae.
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">Newspaper title</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card col-3 m-4">
+							<div class="row font-size-140 py-3 align-self-center">
+								<i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i><i class="fa fa-star col-black"></i>
+							</div>
+							<div class="row px-5 text-center font-weight-bold">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, vitae.
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row mt-2">
+										<h5 class="container-fluid font-size-110 ">
+											<p class="text-center font-size-80">Newspaper title</p>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						-->
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="container-fluid my-4">
+			<div class="container">
+				<div class="row">
+					<div class="h2 paragraphTitle container-fluid">Rewards</div>
+				</div>
+				<div class="row">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="">Year</th>
+								<th scope="">Award</th>
+								<th scope="">Production</th>
+								<th scope="">Result</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="">2016</td>
+								<td class="">Best Musical (Tony Award)</td>
+								<td class="">Broadway</td>
+								<td class="">Nominated</td>
+							</tr>
+							<tr>
+								<td class="">2016</td>
+								<td class="">Favourite Musical (Broadway,com Audience Awards)</td>
+								<td class="">Broadway</td>
+								<td class="">Nominated</td>
+							</tr>
+							<tr>
+								<td class="">2017</td>
+								<td class="">Best New Musical (WhatsOnStage Award)</td>
+								<td class="">West End</td>
+								<td class="">Won</td>
+							</tr>
+							<tr>
+								<td class="">2017</td>
+								<td class="">Oustanding Achievement in Music (Laurence Olivier Award)</td>
+								<td class="">West End</td>
+								<td class="">Won</td>
+							</tr>
+							<!--
+							<tr>
+								<td class="">YYYY</td>
+								<td class="">Reward title (type)</td>
+								<td class="">Production</td>
+								<td class="">Nominated</td>
+							</tr>
+							<tr>
+								<td class="">YYYY</td>
+								<td class="">Reward title (type)</td>
+								<td class="">Production</td>
+								<td class="">Nominated</td>
+							</tr>
+							<tr>
+								<td class="">YYYY</td>
+								<td class="">Reward title (type)</td>
+								<td class="">Production</td>
+								<td class="">Nominated</td>
+							</tr>
+							<tr>
+								<td class="">YYYY</td>
+								<td class="">Reward title (type)</td>
+								<td class="">Production</td>
+								<td class="">Nominated</td>
+							</tr>
+							-->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+			<div class="container-fluid p-0 mt-5">
+				<div class="container-fluid p-0 inline-list-user-profile p-0">
+					<ul class="list-inline container-fluid d-flex justify-content-around align-items-end mb-0">
+					  <li onClick="selectSection('sect1')" id="btnsect1" class="list-inline-item paragraphTitle h4 m-0 py-3"><div class="text-center">Cast</div></li>
+					  <li onClick="selectSection('sect2')" id="btnsect2" class="list-inline-item paragraphTitle h4 m-0 py-3"><div class="text-center">Creative Team</div></li>
+					  <li onClick="selectSection('sect3')" id="btnsect3" class="list-inline-item paragraphTitle h4 m-0 py-3"><div class="text-center">Technical Team</div></li>
+					</ul>
+				<!--<div class="col paragraphTitle h4"><div class="container text-center">Reviews</div></div>
+				<div class="col paragraphTitle h4"><div class="container text-center">Shows</div></div>
+				<div class="col paragraphTitle h4"><div class="container text-center">Theatres</div></div>
+				<div class="col paragraphTitle h4"><div class="container text-center">Country</div></div>  -->
+
+
+				</div>
+				<!--CONTAINER FOR CAST LIST-->
+				<div class="container-fluid karla " id="sect1" style="display:block">
+					<div class="row no-gutters">
+						<div class="col">
+							<table class="table">
+								<thead>
+									<tr class="">
+										<th scope="col" class="align-middle paragraphTitle"><i class="fas fa-filter font-size-180"></i></th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Name</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Role</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Production</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Debut</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Last Show</th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-star font-size-180"></i></th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-heart font-size-180"></i></th>
+										<!--<th scope="col">Edit</th> -->
+									</tr>
+								</thead>
+								<tbody>
+									<!-- .. Template to add a row in the table
+									<tr>
+									<td scope="">IMG</td>
+									<td>Name and Surname</td>
+									<td>Production</td>
+									<td>Debut</td>
+									<td>Last Show</td>
+									<td>Rate</td>
+									<td>Fave</td>
+									</tr>
+									-->
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/alan-pearson.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Alan Pearson</td>
+										<td class="align-middle">Ned Schneebly</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/alex-tomkins.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Alex Tomkins</td>
+										<td class="align-middle">Dewey Finn (Alternate)</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-prosser.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Prosser</td>
+										<td class="align-middle">Swing</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-rees.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Rees</td>
+										<td class="align-middle">Mr Mooneyham</td>
+										<td class="align-middle">Broadway</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4.95/5</td>
+										<td class="align-middle">6K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/billy-mitchell.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Billy Mitchell</td>
+										<td class="align-middle">Swing</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/cassandra-mccowan.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Cassandra McCowan</td>
+										<td class="align-middle">Mrs Hathaway</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">30-AUG-18</td>
+										<td class="align-middle">4.75/5</td>
+										<td class="align-middle">3.5K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/catherine-morris.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Catherine Morris</td>
+										<td class="align-middle">Swing</td>
+										<td class="align-middle">National Tour</td>
+										<td class="align-middle">13-SEP-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+
+								</tbody>
+							</table>				
+						</div>
+					</div>
+				</div>
+				<!--CONTAINER FOR CREATIVE TEAM-->
+				<div class="container-fluid" id="sect2" style="display:none">
+					<div class="row no-gutters">
+						<div class="col">
+							<table class="table">
+								<thead>
+									<tr class="">
+										<th scope="col" class="align-middle paragraphTitle font-size-110"></th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Name</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Role</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Production</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Debut</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Last Show</th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-star font-size-150"></i></th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-heart font-size-150"></i></th>
+										<!--<th scope="col">Edit</th> -->
+									</tr>
+								</thead>
+								<tbody>
+									<!-- .. Template to add a row in the table
+									<tr>
+									<td scope="">IMG</td>
+									<td>Name and Surname</td>
+									<td>Production</td>
+									<td>Debut</td>
+									<td>Last Show</td>
+									<td>Rate</td>
+									<td>Fave</td>
+									</tr>
+									-->
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/alan-pearson.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Alan Pearson</td>
+										<td class="align-middle">Director</td>
+										<td class="align-middle">#1 National US Tour</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/alex-tomkins.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Alex Tomkins</td>
+										<td class="align-middle">CHoreographer</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-prosser.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Prosser</td>
+										<td class="align-middle">Set Designer</td>
+										<td class="align-middle">Broadway</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-rees.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Rees</td>
+										<td class="align-middle">Customer Designer</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4.95/5</td>
+										<td class="align-middle">6K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/billy-mitchell.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Billy Mitchell</td>
+										<td class="align-middle">Sound Designer</td>
+										<td class="align-middle">Australia</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/cassandra-mccowan.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Cassandra McCowan</td>
+										<td class="align-middle">Lighting Designer</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">30-AUG-18</td>
+										<td class="align-middle">4.75/5</td>
+										<td class="align-middle">3.5K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/catherine-morris.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Catherine Morris</td>
+										<td class="align-middle">Musical Supervisor</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">13-SEP-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+								</tbody>
+							</table>				
+						</div>
+					</div>
+				</div>
+				<!--CONTAINER FOR TECHNICAL TEAM, STILL TO BE PROPERLY DEFINED AS IT NEED MORE STUDY TO UNDERSTAND EXACTLY WHAT IC COULD BE-->
+				<div class="container-fluid" id="sect3" style="display:none">
+					<div class="row no-gutters">
+						<div class="col">
+							<table class="table">
+								<thead>
+									<tr class="">
+										<th scope="col" class="align-middle paragraphTitle font-size-110"></th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Name</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Role</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Production</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Debut</th>
+										<th scope="col" class="align-middle paragraphTitle font-size-110">Last Show</th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-star font-size-150"></i></th>
+										<th scope="col" class="align-middle small font-weight-bold paragraphTitle"><i class="fas fa-heart font-size-150"></i></th>
+										<!--<th scope="col">Edit</th> -->
+									</tr>
+								</thead>
+								<tbody>
+									<!-- .. Template to add a row in the table
+									<tr>
+									<td scope="">IMG</td>
+									<td>Name and Surname</td>
+									<td>Production</td>
+									<td>Debut</td>
+									<td>Last Show</td>
+									<td>Rate</td>
+									<td>Fave</td>
+									</tr>
+									-->
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/rob-falconer.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Alan Pearson</td>
+										<td class="align-middle">Production Manager</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/paul-kemble.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Paul Kemble</td>
+										<td class="align-middle">Company Stage Manager</td>
+										<td class="align-middle">#1 Nationa UK Tour</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-prosser.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Prosser</td>
+										<td class="align-middle">Tech ASM Swing</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/andy-rees.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Andy Rees</td>
+										<td class="align-middle">Sound 1</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4.95/5</td>
+										<td class="align-middle">6K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/billy-mitchell.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Billy Mitchell</td>
+										<td class="align-middle">Sound 2</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">21-AUG-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/cassandra-mccowan.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Cassandra McCowan</td>
+										<td class="align-middle">LX 1</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">25-OCT-17</td>
+										<td class="align-middle">30-AUG-18</td>
+										<td class="align-middle">4.75/5</td>
+										<td class="align-middle">3.5K</td>
+									</tr>
+									<tr class="">
+										<td class="align-middle"><img src="img/actor-profile/catherine-morris.jpg" width="60" height="60" alt="name actor"></td>
+										<td class="align-middle">Catherine Morris</td>
+										<td class="align-middle">Head Of Wardrabe</td>
+										<td class="align-middle">West End</td>
+										<td class="align-middle">13-SEP-18</td>
+										<td class="align-middle">Currently In</td>
+										<td class="align-middle">4/5</td>
+										<td class="align-middle">1.2k</td>
+									</tr>
+								</tbody>
+							</table>				
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	</main>
+	<footer class="container-fluid mt-4 pt-4 karla">
+		<div class="row text-center">
+			<div class="col"><p class="container text-center">Who We Are</p></div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Help Us</p></div>
+				<div class="row container mt-2">
+					<p class="container text-center small">If you have any advice or you see that some details are wrong, do not hesitate to contact us and let us know what we should implement, or change about the website</p>
+
+				</div>
+			</div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Contact Us</p></div>
+				<div class="row align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-envelope"></i></div>
+					<div class="col small">emailoftheadministrator@gmail.com</div>
+				</div>
+				<div class="row container align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-phone"></i></div>
+					<div class="col small text-left">02072447653</div>
+				</div>
+				<div class="row container align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-map-marker"></i></div>
+					<div class="col small">
+						<div class="row container">Address</div>
+						<div class="row container">City</div>
+						<div class="row container">PostCode</div>
+					</div>
+				</div>
+			</div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Social</p></div>
+				<div class="row container">
+					<div class="col m-o font-size-200"><i class="fab fa-facebook-square"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-twitter-square"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-instagram"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-youtube-square"></i></div>
+					<!--<div class="col-2 m-0 font-size-200"><i class="fab fa-snapchat-square"></i></div> -->
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row mt-4">
+		  <div class="container-fluid text-center">Copyright by Andrea Bizzotto</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<!--FANCYBOX-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+	
+	<!--JS FOR SLICK SLIDER-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(document).on('ready', function() {
+	  $(".regular").slick({
+		dots: true,
+		infinite: true,
+		slidesToShow: 5,
+		slidesToScroll: 1
+	  });
+	  $(".center").slick({
+		dots: true,
+		infinite: true,
+		centerMode: true,
+		slidesToShow: 5,
+		slidesToScroll: 1
+	  });
+		$(".regular-double").slick({
+		dots: true,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1
+	  });
+
+	  $(".variable").slick({
+		dots: true,
+		infinite: true,
+		variableWidth: true
+	  });
+	  $(".lazy").slick({
+		lazyLoad: 'ondemand', // ondemand progressive anticipated
+		infinite: true
+	  });
+	});
+	</script>
+
+		
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<?php 
+
+?>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+			<!--STYLESHEET-->
+		<link href="prova.css" rel="stylesheet" type="text/css">
+		 <!--FONTS --- font-family: 'Roboto Slab', serif; --- font-family: 'Karla', sans-serif; --- 	font-family: 'Montserrat', sans-serif; -->
+		<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Montserrat:400,500,600,700,700i,900|Roboto+Slab:300,400,700" rel="stylesheet">
+			<!--FONTAWESOME STYLESHEET FOR ICONS-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<!--STYLESHEET FOR BOOTSTRAP-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!--SLICKNAV FR SLIDER-->
+		<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+
+		<title>HomePage</title>
+	</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-nav navbar-expand-md fixed-top mb-4 px-3" style="line-height: 100px">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" alt="logo" width="200">
+			</a>
+			<div id="navbarCollapse" class="collapse navbar-collapse container-fluid float-right">
+				<ul class="navbar navbar-nav mr-auto align-items-end container align-items-center">
+					<li class="nav-item mx-2"><a class="nav-link font-size-180" data-toggle="collapse" href="#navbar-header-search" role="button" aria-expanded="false" aria-controls="navbar-header-search"><i class="fas fa-search"></i></a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="news.html">News</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="theatre.html">Theatre</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="production.html">Production</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="calendar.html">Calendar</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
+					<li class="nav-item mx-2"><a class="nav-link" href="about-us.html">About US</a></li>
+					<li class="nav-item mx-2">
+						<a class="nav-link btn btn-default btn-rounded my-3" href="#" data-toggle="modal" data-target="#modalLoginForm"><i class="fas fa-sign-in-alt font-size-150"></i></a>
+					</li>
+				</ul>
+			</div>		
+		</nav>
+		<div class="collapse" id="navbar-header-search">
+			<form class="p-2 px-5" style="margin-top:100px">
+				<div class="row" >
+					<i class="fas fa-search font-size-180 mx-3"></i>
+					<input class="p-2 container" type="text" placeholder="Search">
+				</div>
+			</form>
+		</div>
+	</header>
+	<main class="mt-5 pt-5" role="main">
+		<p class="h2 paragraphTitle">Registration Page</p>
+		<form action="usersignup.php" method="post" id="registrationForm">
+           <div class="registrationFormField">
+			  <label>First Name</label>
+				<input type="text" name="firstName" id="firstName" required>
+			</div>	
+			<div class="registrationFormField">
+				<label>Middle Name</label>
+				<input type="text" name="middleName" id="middleName">
+			</div>	
+			<div class="registrationFormField">
+				<label>Last Name</label>
+				<input type="text" name="lastName" id="lastName" required>
+			</div>
+			<div class="registrationFormField">
+				<label>Email Address</label>
+				<input type="text" name = "email_Address" id="email_Address" required>
+			</div>	
+			<div class="registrationFormField">
+				<label>Repeat Email Address</label>
+				<input type="text" name="email_Address" required>
+			</div>	
+			<div class="registrationFormField">
+				<label>Password</label>
+				<input type="password" name ="pass_word" id="pass_word" required>
+			</div>	
+			<div class="registrationFormField">
+				<label>Repeat Password</label>
+				<input type="password" name="password" required>
+			</div><br>
+			<p class="h2 paragraphTitle">Additional Information</p>
+			<p class="small">Those information are not required, and you will still be able to add them later on going into your profile account.</p>
+			<p>Check as some of those are not into the database!</p>
+			<div class="registrationFormField">
+				<label>Date Of Birth</label>
+				<input type="date" name ="user_dob" id="user_dob">
+			</div>
+			<div class="registrationFormField">
+				<label>Country Of Birth</label>
+				<select>
+					<option value="country_ID">Country_Name</option>
+				</select>
+			</div>	
+			<div class="registrationFormField">
+				<label>Country of Residence</label>
+				
+				<input type="text" name ="" id="" required>
+			</div>
+			<div class="registrationFormField">
+				<label>Height</label>
+				<input type="text" name ="" id="" required>
+			</div>	
+			<input type="submit" value="REGISTER" >
+		</form>
+		
+		
+
+
+
+	
+	</main>
+	<footer class="container-fluid mt-4 pt-4 karla">
+		<div class="row text-center">
+			<div class="col"><p class="container text-center">Who We Are</p></div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Help Us</p></div>
+				<div class="row container mt-2">
+					<p class="container text-justify small">If you have any advice or you see that some details are wrong, do not hesitate to contact us and let us know what we should implement, or change about the website</p>
+
+				</div>
+			</div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Contact Us</p></div>
+				<div class="row align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-envelope"></i></div>
+					<div class="col small">emailoftheadministrator@gmail.com</div>
+				</div>
+				<div class="row container align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-phone"></i></div>
+					<div class="col small text-left">02072447653</div>
+				</div>
+				<div class="row container align-items-center mt-2">
+					<div class="col-3 text-right font-size-150"><i class="fas fa-map-marker"></i></div>
+					<div class="col small">
+						<div class="row container">Address</div>
+						<div class="row container">City</div>
+						<div class="row container">PostCode</div>
+					</div>
+				</div>
+			</div>
+			<div class="col white-left-line">
+				<div class="row"><p class="container text-center">Social</p></div>
+				<div class="row container">
+					<div class="col m-o font-size-200"><i class="fab fa-facebook-square"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-twitter-square"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-instagram"></i></div>
+					<div class="col m-0 font-size-200"><i class="fab fa-youtube-square"></i></div>
+					<!--<div class="col-2 m-0 font-size-200"><i class="fab fa-snapchat-square"></i></div> -->
+				</div>
+			</div>
+		</div>
+		<div class="row mt-4">
+		  <div class="container-fluid text-center">Copyright by Andrea Bizzotto</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+</body>
+</html>
